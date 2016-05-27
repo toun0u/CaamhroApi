@@ -1,0 +1,97 @@
+div.content_todos{
+	clear:both;
+	padding-top: 10px;
+}
+
+span.maj_par{
+	color: #CE6A5F;
+}
+
+span.validated_par{
+	color: #8CBC1C;
+}
+
+div.messages_list{
+	margin-top: 1em;
+}
+
+div.messages_list span.no_comment{
+	color: #777;
+	font-size: 1.2em;
+	font-style: italic;
+}
+div.messages_list div.todo{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+div.ground0{
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: 1px;
+}
+div.todo{
+	overflow: hidden;
+	margin-top: 5px;
+}
+div.todo div.details{
+	padding: 2px;
+}
+
+div.todo div.details div.avatar{
+	float: left;
+}
+div.todo div.details div.description{
+	margin-left: 0px;
+	min-height: 40px;
+}
+
+div.todo div.details div.description span.from{
+	color: #DF1D31;
+}
+
+div.todo div.details div.description span.dates{
+	color: #999;
+	font-style:italic;
+	font-size: 0.9em;
+}
+
+div.todo div.message{
+	padding: 5px;
+	color: #444;
+	background-color: #F5F5F5;
+}
+
+div.task_img{
+	float: left;
+}
+
+div.todo div.content_right{
+	text-align: right;
+}
+
+a.a_action{
+	text-decoration: underline !important;
+	color: #888 !important;
+	font-size: 1em;
+	margin-right: 0.8em ;
+}
+a.a_action:hover{
+	color: #DF1D31 !important;
+}
+div.todo div.actions a.to_validate{
+	color: #8CBC1C !important;
+}
+
+div.todo div.actions a:hover{
+	color: #DF1D31 !important;
+}
+
+span.no_comment{
+	color:#888;
+}
+
+div.div_no_elem{
+	margin-top: 1.5em;
+	color:#888;
+	padding: 1em;
+}

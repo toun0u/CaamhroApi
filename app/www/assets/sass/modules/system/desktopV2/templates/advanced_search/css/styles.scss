@@ -1,0 +1,357 @@
+div.cadre_advanced_search div.filters{
+    background-color: #F5F5F5;
+	padding: 5px;
+}
+
+div.cadre_advanced_search div.filters input.as_keywords{
+    float: left;
+    width: 200px;
+    height: 26px;
+    margin-left: 5px;
+    font-size: 14px;
+	color: #DF1D31;
+}
+
+div.cadre_advanced_search div.filters .chzn-container .chzn-results .highlighted {
+  background: #DF1D31 !important;
+  color: #fff;
+}
+
+div.cadre_advanced_search div.filters div#country_chzn div.chzn-drop{
+	width: 280px !important;
+}
+
+div.cadre_advanced_search div.filters div#country_chzn div.chzn-drop div.chzn-search input{
+	width: 245px !important;
+}
+
+div.cadre_advanced_search div.filters div.header{
+	overflow: hidden;
+}
+div.cadre_advanced_search div.filters div.header h1{
+	float:left;
+	margin: 0px;
+}
+div.cadre_advanced_search div.filters div.header a{
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	width: 16px;
+	text-decoration: none;
+}
+
+div.cadre_advanced_search div.filters div.header a img{
+	border: none;
+}
+
+div.cadre_advanced_search div.filters div.fields{
+    clear: left;
+    margin-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.cadre_advanced_search div.filters div.fields input[type=checkbox]{
+	margin-left: 0px;
+}
+
+div.cadre_advanced_search div.filters div.fields table p.date_band{
+	margin: 0px;
+	line-height: 23px;
+}
+
+div.cadre_advanced_search div.filters div.fields table p.date_band input{
+	width: 70px;
+}
+
+div.cadre_advanced_search div.filters div.fields table p.date_band a.range{
+	margin-left: 10px;
+	text-decoration: none;
+	color: #888888;
+	font-size: 10px;
+}
+div.cadre_advanced_search div.filters div.fields table p.date_band a.range:hover{
+	color: #555555;
+}
+div.cadre_advanced_search div.filters div.fields table p.date_band a.searching{
+	display:inline-block;
+	height:16px;
+	width:16px;
+	margin-left: 10px;
+	background-repeat: no-repeat;
+	background: image-url('/common/modules/system/desktopV2/templates/gfx/common/valid_hover.png') 0 0;
+}
+div.cadre_advanced_search div.filters div.fields table p.date_band a.searching:hover {
+	background-position: -16px 0px;
+}
+
+div.cadre_advanced_search div.filters div.fields table p.date_band a.searching:active {
+	background-position: -32px 0px;
+}
+
+div.cadre_advanced_search div.filters div.fields table p.date_band img{
+	margin-left: 3px;
+	vertical-align: top;
+}
+
+div.chzn-drop{
+    min-width: 115px;
+}
+
+div.fields_gauche{
+    float: left;
+    width: 80%;
+}
+
+div.fields_droite{
+    float: right;
+    line-height: 35px;
+    text-align: right;
+    width: 40%;
+}
+
+div.cadre_advanced_search div.filters div.fields table{
+    width: 100%;
+}
+
+div.cadre_advanced_search div.filters div.fields table td.label{
+	text-align: right;
+
+}
+
+div.cadre_advanced_search div.filters div.fields table td.button20{
+	text-align: center;
+	width: 20px;
+}
+
+div.cadre_advanced_search div.filters div.close_section{
+	float: right;
+	clear: both;
+}
+div.cadre_advanced_search div.filters div.close_section a{
+	text-decoration: none;
+	color: #888888;
+}
+div.cadre_advanced_search div.filters div.close_section a img{
+	width: 18px;
+	height: 18px;
+	border: none;
+	vertical-align: middle;
+}
+
+div.cadre_advanced_search div.filters div.close_section a:hover{
+	color: #666666;
+}
+
+div.cadre_advanced_search span.title{
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+div.table_gauche{
+    float: left;
+    width: 47%;
+}
+
+div.table_gauche table{
+    width: 100%;
+}
+
+div.table_gauche table td img.img_calendar{
+    float: none;
+    width: 20px;
+    height: 21px;
+    margin: 0px;
+}
+
+table td.text{
+    text-align: right;
+    font-weight: bold;
+	width: 15%;
+}
+
+div.table_droite{
+    float: right;
+    width: 47%;
+}
+
+div.table_droite table{
+    float:right;
+    margin-right: 30px;
+}
+
+div.cadre_advanced_search{
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 94%;
+}
+
+
+
+div.cadre_build_search{
+	background-color: #F5F5F5;
+    width: 100%;
+}
+
+div.cadre_build_search div.title_exploration{
+    color: #444444;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+div.cadre_build_search div.title_exploration span.colorized{
+	color: #DF1D31;
+}
+
+div.cadre_build_search{
+    background-color: #F5F5F5;
+    margin-top: 10px;
+    width: 100%;
+}
+
+div.cadre_build_search > span.build_search_text{
+    text-align: right;
+    vertical-align: top;
+    width: 70%;
+}
+
+div.building{
+	width: 100%;
+	padding: 5px;
+	overflow:hidden;
+}
+
+div.building > div{
+	float:left;
+    max-width: 150px;
+	margin-left: 4px;
+	margin-right: 4px;
+	text-align: center;
+	overflow: hidden;
+	height: 80px;/* permet d'éviter le chevauchement quand y'a un retour à la ligne*/
+}
+
+
+
+div.building > div.item{
+	color: #444444;
+	z-index: 0;
+}
+div.building > div.item div.as_picto{
+	width: 60px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;/* masque les débordements pour les photos déjà existentes qui ne seront pas redimensionnées*/
+}
+
+div.building > div.expression img{
+	margin-top: 10px;
+}
+
+div.building > div.operator{
+	width: 16px;
+}
+div.building > div.operator img{
+	vertical-align: middle;
+	margin-top:22px;
+}
+
+div.building > div.bracket img{
+	margin-top:6px !important;
+}
+
+div.building > div.egal img{
+	margin-top:24px !important;
+}
+
+div.building > div.item span.label {
+	line-height: 16px;
+}
+
+/*------------ SUGGESTIONS KEYWORDS ---------------------------*/
+
+div#bloc_display_suggestions{
+	width: 350px;
+	position: absolute;
+	background-color: white;
+	border: 1px solid #DEDEDE;
+	min-height: 20px;
+	z-index: 10;
+	text-align: left !important;
+	line-height: 12px !important;
+}
+div#bloc_display_suggestions div.footer{
+	background-color: #F5F5F5;
+	border-top: 1px solid #DEDEDE;
+	vertical-align: middle;
+	text-align: right;
+	padding: 5px;
+}
+
+div#bloc_display_suggestions div.footer a{
+	color: #DF1D31;
+	text-decoration: none;
+}
+div#bloc_display_suggestions div.footer a:hover{
+	text-decoration: underline !important;
+}
+
+div#bloc_display_suggestions div.results{
+	overflow: auto;
+	padding: 5px;
+	max-height: 220px;
+}
+div#bloc_display_suggestions div.sugst_kw_bloc {
+	border-bottom: 1px solid #DEDEDE;
+	min-height: 50px;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.bloc{
+	float: left;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.picto{
+	width: 40px;
+	height: 40px;
+	overflow:hidden;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.action{
+	width: 24px;
+	height: 40px;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.title{
+	width: 252px;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.title a{
+	text-decoration: none;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.title a img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.title a span{
+	text-decoration: underline;
+}
+div#bloc_display_suggestions div.sugst_kw_bloc div.title a:hover{
+	color: #DF1D31;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.title span.dates{
+	color: #777777;
+}
+
+div#bloc_display_suggestions div.sugst_kw_bloc div.action img{
+	margin-top: 8px;
+}

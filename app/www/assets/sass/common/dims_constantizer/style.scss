@@ -1,0 +1,146 @@
+div#constantizer{
+	display: none;
+	background-color: #333333;
+	color: white;
+	z-index: 10;
+	position: fixed;
+	right: 0px;
+	/*top: 25px;*/
+	height: 300px;
+	width: 500px;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+div#constantizer a{
+	text-decoration: none;
+	color: white;
+}
+
+div#constantizer div.close{
+	float: right;
+	clear: both;
+}
+
+div#constantizer div.close img{
+	border: none;
+}
+
+div#constantizer div.close a{
+	text-decoration: none;
+}
+
+
+div#constantizer div.results{
+	height: 200px;
+	overflow-y: auto;
+	border-top: 1px solid #9CEF6C;
+	border-bottom: 1px solid #9CEF6C;
+	background-color: #383838;
+	color: white;
+}
+
+div#constantizer div.search{
+	margin-top: 5px;
+}
+
+div#constantizer div.search p{
+	margin: 1px;
+	margin-bottom: 0px;
+}
+
+div#constantizer div.search a.create_link{
+	color: white;
+	text-decoration: none;
+	float:right;
+	display:block;
+	margin-right: 40px;
+	margin-top: 3px;
+}
+div#constantizer div.form div.fields{
+	margin-top: 5px;
+	height: 220px;
+	overflow-y: auto;
+}
+
+div#constantizer div.success_edition div.phpvalue{
+	color: #9CEF6C;
+	font-size: 16px;
+}
+
+div#constantizer div.success_edition div.liste_sql{
+	margin-top: 5px;
+	height: 200px;
+	overflow-y: auto;
+}
+
+div#constantizer div.form div.erreur{
+	color: #17AFE8;
+	float: left;
+}
+div#constantizer div.form div.fields table:first-child{
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+div#constantizer div.form div.fields table{
+	border-collapse: collapse;
+	width: 490px;
+}
+div#constantizer div.form div.fields input{
+	width: 100%;
+}
+
+div#constantizer div.form div.fields table tr > td:first-child{
+	text-align: right;
+	font-weight: bold;
+	width: 15%;
+}
+
+div#constantizer div.actions a{
+	margin-right: 10px;
+}
+div#constantizer div.actions{
+	float:right;
+}
+
+div#constantizer div.actions a:hover{
+	color: #9CEF6C !important;
+}
+
+div#constantizer div.search a.create_link:hover{
+	color: #9CEF6C !important;
+}
+div#constantizer div.footer{
+	height: 20px;
+	font-size: 16px;
+}
+div#constantizer div.footer p{
+	font-family: 'Lucida Console', Helvetica, Arial;
+	margin: 0;
+	margin-top: 5px;
+	line-height: 20px;
+}
+
+div#constantizer div.footer p img{
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+div#constantizer div.results > div{
+	float: none;
+	border-bottom: 1px solid #888888;
+	clear: both;
+	font-size: 13px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div#constantizer div.results > div a.selected{
+	color: #9CEF6C !important;
+}
+
+div#constantizer div.search input{
+	width: 380px;
+}

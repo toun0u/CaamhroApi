@@ -1,0 +1,31 @@
+// Mixin Compass imports, like @border-radius(), @border-shadow(), etc.
+@import "compass/css3";
+
+
+/* Import of global structure */
+/* The order of import is important because of variables and mixins! */
+
+@import "_core/variables.scss";		// Contains items you can fast edit
+@import "_core/helpers.scss";		// Contains some helpers (rem(), m, p<type><val>, etc.)
+@import "_core/reset.scss";			// Quick reset for each navigator
+
+// Now you can change the order if you wish:
+
+@import "_core/layout.scss";		// Contains all layout for each width, flexbox, text-align, float, etc.
+@import "_core/table.scss";
+@import "_core/grid.scss";
+@import "_core/form.scss";
+
+@import "_core/print.scss";
+@import "_core/iefix.scss";
+
+/* **** End of config import **** */
+
+
+/*
+ * Below you have the fixs imports for each breakpoints
+ * They may contain the specifics styles for responsive
+ */
+@import "phone.scss";
+@import "tablet.scss";
+@import "desk.scss";

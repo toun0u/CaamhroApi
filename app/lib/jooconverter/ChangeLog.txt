@@ -1,0 +1,14 @@
+JOOConverter 2.0rc2
+
+Due to popular demand JOOConverter, while still being part of JOOReports, is now
+released as a standalone project (as it was already the case with the 1.0 series).
+
+Changes compared to the version included in JOOReports 2.0rc1
+
+ * added the converter web application
+
+ * made jar file executable with ConvertDocument as main class
+
+ * added (but unsupported) HTML and XHTML export formats
+
+ * minor bug fixes

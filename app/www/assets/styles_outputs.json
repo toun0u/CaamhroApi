@@ -1,0 +1,183 @@
+{
+	"default":{
+		"includes":[
+		],
+		"excludes":[
+		],
+		"exceptions":{
+			"frontoffice":{
+				"caahmro":{
+					"fixs" : [
+						["styles_ie.css","IE"],
+						["styles_ie8.css","IE 8"],
+						["styles_ie9.css","IE 9"]
+					],
+
+					"excludes" : [
+						"agenda.css",
+						"save2tpl.css",
+						"savestyles.css",
+						"save.css",
+						"basic/basic.css"
+					],
+
+					"includes" : [
+						"objects/coverflow/style.css",
+						"common/jquery_ui/smoothness/jquery-ui.css",
+						"common/colorbox/colorbox.css"
+					]
+				},
+				"caahmro_intranet":{
+					"fixs" : [
+						["styles_ie.css","IE"],
+						["styles_ie8.css","IE 8"],
+						["styles_ie9.css","IE 9"]
+					],
+
+					"excludes" : [
+						"agenda.css",
+						"save2tpl.css",
+						"savestyles.css",
+						"save.css",
+						"basic/basic.css"
+					],
+
+					"includes" : [
+						"objects/coverflow/style.css"
+					]
+				}
+			},
+
+			"backoffice":{
+				"desktopV2":{
+
+					"fixs" : [
+						["css/styles_ie7.css", "IE 7"],
+						["css/styles_ie8.css", "IE 8"],
+						["css/styles_ie9.css", "IE 9"]
+					],
+
+					"includes" : [
+						"common/dims_constantizer",
+						"common/jquery_ui/smoothness/jquery-ui.css",
+						"common/jquery_mobile/jquery.mobile-1.0.1.min.css",
+						"common/chosen/chosen.css",
+						"../javascripts/common/colorpicker/css/colorpicker.css"
+					],
+
+					"excludes" : [
+						"backoffice/desktopV2/css/main_old.css",
+						"css/jquery.mobile-1.0.1.min.css"
+					]
+
+				},
+				"desktopV3":{
+					"includes" : [
+						"common/dims_constantizer",
+						"common/jquery_ui/smoothness/jquery-ui.css"
+					]
+				},
+				"pureBO":{
+					"includes" : [
+						"common/chosen/chosen.css",
+						"backoffice/desktopV2",
+						"common/jquery_ui/smoothness",
+						"modules/system/desktopV2/templates/styles.css",
+						"modules/system/desktopV2/templates/advanced_search/css",
+						"modules/system/desktopV2/templates/companies_recently/css",
+						"modules/system/desktopV2/templates/recent_activities/css",
+						"modules/system/desktopV2/templates/result_search/css",
+						"modules/system/desktopV2/templates/opportunity/css",
+						"modules/system/desktopV2/templates/activity/css",
+						"modules/system/desktopV2/templates/new_company/css",
+						"modules/system/desktopV2/templates/leads/css",
+						"modules/system/desktopV2/templates/address_book/css",
+						"modules/system/desktopV2/templates/newsletters/css",
+						"../javascripts/common/dims_constantizer/styles.css",
+						"../javascripts/common/select2-3.5.1/select2.css"
+					],
+						"excludes" : [
+						"backoffice/desktopV2/css/main_old.css"
+					]
+				}
+			}
+		}
+	},
+
+	"catalogue":{},
+	"compass": {
+	"excludes": [
+		"modules/compass/views/back/css/styles.css"
+	]
+	},
+	"planning":{
+		"includes" : [],
+		"excludes":[],
+		"fixs": []
+	},
+	"invitation":{
+		"includes" : [
+			"modules/invitation"
+		],
+		"excludes":[],
+		"fixs": []
+	},
+	"forms":{
+		"includes" : [
+			"modules/forms/styles.css"
+		],
+		"excludes":[
+			"modules/forms/include"
+		],
+		"fixs": []
+	},
+	"system":{
+
+		"includes": [
+			"modules/system/desktopV2/templates/result_search",
+			"modules/system/desktopV2/templates/recent_activities",
+			"modules/system/desktopV2/templates/recent_opportunities",
+			"modules/system/desktopV2/templates/activity",
+			"modules/system/desktopV2/templates/opportunity",
+			"modules/system/desktopV2/templates/leads",
+			"modules/system/desktopV2/templates/companies_recently",
+			"modules/system/desktopV2/templates/new_company",
+			"modules/system/desktopV2/templates/advanced_search",
+			"modules/system/desktopV2/templates/recent_connexions",
+			"modules/system/desktopV2/templates/address_book",
+			"modules/system/desktopV2/templates/shortcuts",
+			"modules/system/desktopV2/templates/newsletters",
+			"modules/system/desktopV2/templates/planning",
+			"modules/system/desktopV2/templates/tag",
+			"modules/system/desktopV2/templates/styles.css",
+			"common/chosen/chosen.css"
+		],
+
+		"excludes": [
+			"backoffice/desktopV2/css/main_old.css",
+			"modules/system/fckeditor/fck_editorarea.css"
+		],
+		"fixs": [
+			["modules/system/desktopV2/templates/styles_ie7.css", "IE 7"],
+			["modules/system/desktopV2/templates/styles_ie8.css", "IE 8"],
+			["modules/system/desktopV2/templates/styles_ie9.css", "IE 9"]
+		]
+	},
+	"wce":{
+		"includes" : [
+			"../../common/modules/wce/wce",
+			"../../common/css/bootstrap.min.css"
+		],
+		"excludes":[
+			"backoffice/desktopV2/css"
+		],
+		"fixs": []
+	},
+	"gescom":{
+		"includes" : [
+			"modules/gescom"
+		],
+		"excludes":[],
+		"fixs": []
+	}
+}

@@ -1,0 +1,25 @@
+div.bloc2{
+	margin-left : 427px !important;
+}
+
+.smallCarousel .anythingControls {
+	top: 140px;
+}
+
+div.bloc1 .slider h3.titreSlider{
+	margin-left : 3px;
+}
+
+div.bloc2 .slider h3.titreSlider{
+	margin-left : 17px;
+}
+
+div.bloc1 .caption.bottom,
+div.bloc2 .caption.bottom{
+	top : 180px;
+}
+
+.smallCarousel .anythingSlider {
+	background-position-x : 0px;
+	background-position-y : 138px;
+}

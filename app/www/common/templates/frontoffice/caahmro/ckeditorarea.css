@@ -1,0 +1,42 @@
+body
+{font-family:Helvetica, sans-serif;font-size:12px;color:#222}
+
+ol,ul,dl{*margin-right:0px;padding:0 40px}
+
+h1.h1_caahmro{
+    border-bottom: 1px solid rgb(239, 93, 53);
+    border-left: 4px solid #DC5B40;
+    font-family: Helvetica;
+    border-radius: 0 5px;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-indent: 0.3em;
+    color: rgb(100, 100, 100) !important;
+}
+
+h3.h3_noir{
+    color: #646464;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+h2.h2_orange{
+    color: #DC5B40;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+h3.h3_orange{
+    color: #DC5B40;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+p.p_normal{
+    color: #646464;
+    font-family: Helvetica;
+    font-size: 11px;
+}
+
+p.wiki_paragraph{font-family:Helvetica, sans-serif;font-size:10px;color:#646464;text-align:justify;margin:0px !important}
+

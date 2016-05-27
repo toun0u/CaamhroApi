@@ -1,0 +1,244 @@
+/*
+	AnythingSlider v1.5.10 CPE Theme
+*/
+
+/****** SET COLORS HERE *******/
+/* Default State */
+div.anythingSlider-cpe .anythingWindow {
+	border: 0;
+}
+
+/* Navigation Arrows */
+div.anythingSlider-cpe .arrow {
+	top: 50%;
+	position: absolute;
+	display: block;
+}
+
+div.anythingSlider-cpe .arrow a {
+	display: block;
+	height: 20px;
+	margin-top: -50px;
+	width: 11px;
+	text-align: center;
+	outline: 0;
+	background: url(gfx/smallArrows.png) no-repeat;
+}
+
+div.anythingSlider-cpe .forward { right: 0; }
+div.anythingSlider-cpe .back { left: 0; }
+div.anythingSlider-cpe .forward a { background-position: right bottom; }
+div.anythingSlider-cpe .back a { background-position: left bottom; }
+div.anythingSlider-cpe .forward a:hover, div.anythingSlider-cpe .forward a.hover { background-position: right top; }
+div.anythingSlider-cpe .back a:hover, div.anythingSlider-cpe .back a.hover { background-position: left top; }
+
+/* Navigation Links */
+div.smallCarousel .anythingControl {
+	position: absolute;
+	z-index: 0 !important;
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+div.anythingSlider-cpe .thumbNav {
+	z-index: 100;
+}
+div.anythingSlider-cpe .thumbNav li {
+	display: block;
+	float: left;
+}
+div.anythingSlider-cpe .thumbNav a {
+	background: #777;
+	display: block;
+	height: 6px;
+	width: 6px;
+	margin: 3px;
+	padding: 0;
+	outline: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.anythingSlider-cpe.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+div.anythingSlider-cpe.rtl .thumbNav { float: left; }    /* move nav link group to left */
+
+
+/* Autoplay Start/Stop button */
+div.anythingSlider-cpe .start-stop {
+	display: none;
+}
+
+/* Extra - replace defaults */
+div.anythingSlider-cpe {
+	padding: 0;
+}
+
+/* text indent moved to span inside "a", for IE7; apparently, a negative text-indent on an "a" link moves the link as well as the text */
+div.anythingSlider-cpe .arrow a span, div.anythingSlider-cpe .thumbNav a span, div.anythingSlider-cpe .start-stop span {
+	display: block;
+	line-height: 1px; /* needed for IE7 */
+	text-indent: -9999px;
+}
+
+
+/* CAPTIONS */
+.slider .caption {
+	margin: 0;
+	padding: 10px;
+	background: transparent url(gfx/caption.png) repeat top left;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	width: 200px;
+	height: 233px;
+	margin-left: 480px;
+}
+
+.slider .caption a.block {
+	bottom: 30px;
+	display: block;
+	position: absolute;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.slider .caption.top {
+	width: 678px;
+	height: 55px;
+	margin-left: 0px;
+}
+.slider .caption.bottom {
+	width: 700px;
+	height: 55px;
+	bottom: 0;
+	margin-left: 0px;
+}
+.slider .caption.left {
+	width: 200px;
+	height: 233px;
+	margin-left: 0px;
+}
+.slider .caption.right {
+	width: 200px;
+	height: 233px;
+	margin-left: 480px;
+}
+
+/**********************/
+
+div.bloc1{
+	margin-left : 78px;
+	margin-bottom : 25px;
+	width : 269px;
+}
+
+div.bloc2{
+	margin-left : 429px;
+	margin-bottom : 25px;
+	width : 300px;
+}
+
+div.bloc1 div.slider{
+	float : left;
+	width : 100%;
+}
+
+div.bloc1 .caption.bottom,
+div.bloc2 .caption.bottom{
+	width: 240px;
+	padding-left : 0px;
+	overflow: auto;
+	font-size: 100%;
+	line-height: 16px;
+	margin-left : 0;
+	margin-left : 0;
+	margin-right : 0;
+	margin-right : 0;
+	background-image: none;
+	text-align : justify;
+	z-index : 100;
+	font-family: helvetica;
+	font-weight: normal;
+	top : 165px;
+}
+
+div.slider.smallCarousel{
+	margin-left : 3px !important;
+}
+
+div.slider.smallCarousel .arrow.back, div.slider.smallCarousel .arrow.forward{
+	top : 189px;
+	z-index : 200;
+}
+
+div.slider.smallCarousel .arrow.forward{
+	right : 70px;
+}
+
+div.slider.smallCarousel .arrow.back{
+	left : 70px;
+}
+
+.slider h3.titreSlider{
+	background: url(gfx/smallBackgroundTitre.png) no-repeat 0% 0%;
+	color:#000;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 135%;
+	margin-bottom:0;
+	margin-top:0;
+	padding : 3px 0px 7px 8px;
+	width : 256px;
+}
+
+div.bloc1 img,
+div.bloc2 img,
+div.bloc1 iframe,
+div.bloc2 iframe{
+	margin-left:3px;
+	width : 236px;
+	height : 134px;
+	margin:auto;
+	background: url(gfx/smallBackground.png);
+	margin-top : -6px;
+}
+
+div.bloc1 img,
+div.bloc2 img{
+	padding : 6px 7px 7px 7px;
+	margin-right:3px;
+}
+
+div.bloc1 iframe,
+div.bloc2 iframe{
+	height : 140px !important;
+}
+
+.smallCarousel .anythingSlider {
+	background: url(gfx/smallOverFlowDegrade.png) no-repeat;
+	background-position: 0 138px;
+}
+
+/* BLOC 1 */
+div.bloc1 .slider h3.titreSlider{
+	margin-left : 2px;
+}
+
+/* Il y a un décallage de 1px sur Firefox */
+@-moz-document url-prefix() {
+    div.bloc1 .slider h3.titreSlider{
+        margin-left : 3px;
+    }
+}
+
+/* BLOC 2 */
+div.bloc2 .slider h3.titreSlider{
+	margin-left : 16px;
+} /* !!! LA LIGNE DE DESSOUS !!! */
+/* Il y a un décallage de 1px sur Firefox */
+@-moz-document url-prefix() {
+    div.bloc2 .slider h3.titreSlider{
+        margin-left : 17px;
+    }
+}

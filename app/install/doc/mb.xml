@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?> 
+<dims>
+<dims_mb_wce_object>
+	<row>
+		<label>Affichage Dossier</label>
+		<script>?op='browse'</script>
+		<select_id>id</select_id>
+		<select_label>name</select_label>
+		<select_table>dims_mod_doc_folder</select_table>
+		<select_params>foldertype='public'</select_params>
+	</row>
+</dims_mb_wce_object>
+<dims_mb_object>
+<row>
+  <id>1</id> 
+  <label>Dossier</label>
+  <script>dims_moduleid=&lt;IDMODULE&gt;&amp;dims_action=public&amp;doc_folder=&lt;IDRECORD&gt;</script>
+</row>
+<row>
+  <id>2</id> 
+  <label>Fichier</label>
+  <script>dims_moduleid=&lt;IDMODULE&gt;&amp;dims_action=public&amp;op=file_modify&amp;docfile_id=&lt;IDRECORD&gt;</script>
+</row>
+<row>
+  <id>3</id> 
+  <label>Fichier à Valider</label>
+  <script>dims_moduleid=&lt;IDMODULE&gt;&amp;dims_action=public&amp;op=viewdraft&amp;docfiledraft_id=&lt;IDRECORD&gt;</script>
+</row>
+</dims_mb_object>
+
+<dims_mb_table>
+<row>
+  <name>dims_mod_doc_file</name> 
+  <label /> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_doc_param</name> 
+  <label>_param</label> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_docext</name> 
+  <label>ext</label> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_docfolder</name> 
+  <label>folder</label> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_doctype</name> 
+  <label>type</label> 
+  <visible>1</visible> 
+  </row>
+  </dims_mb_table>
+<dims_mb_field>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  <id_object>2</id_object>
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>name</name> 
+  <label>name</label> 
+  <type>varchar(100)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>description</name> 
+  <label>description</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id_docfolder</name> 
+  <label>id_docfolder</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>nbclick</name> 
+  <label>nbclick</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id_user_modify</name> 
+  <label>id_user_modify</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>date_create</name> 
+  <label>date_create</label> 
+  <type>datetime</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>date_modify</name> 
+  <label>date_modify</label> 
+  <type>datetime</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>rights_user</name> 
+  <label>rights_user</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>rights_group</name> 
+  <label>rights_group</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>rights_all</name> 
+  <label>rights_all</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>size</name> 
+  <label>size</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>extension</name> 
+  <label>extension</label> 
+  <type>varchar(20)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>parents</name> 
+  <label>parents</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_file</tablename> 
+  <name>content</name> 
+  <label>content</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_param</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10)</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_param</tablename> 
+  <name>libelle</name> 
+  <label>libelle</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_param</tablename> 
+  <name>path</name> 
+  <label>path</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doc_param</tablename> 
+  <name>ext_id</name> 
+  <label>ext_id</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docext</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docext</tablename> 
+  <name>ext</name> 
+  <label>ext</label> 
+  <type>varchar(20)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docext</tablename> 
+  <name>file</name> 
+  <label>file</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docext</tablename> 
+  <name>id_doctype</name> 
+  <label>id_doctype</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  <id_object>1</id_object>  
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>name</name> 
+  <label>name</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>description</name> 
+  <label>description</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>parents</name> 
+  <label>parents</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>id_user_create</name> 
+  <label>id_user_create</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>id_user_modify</name> 
+  <label>id_user_modify</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>date_create</name> 
+  <label>date_create</label> 
+  <type>datetime</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>date_modify</name> 
+  <label>date_modify</label> 
+  <type>datetime</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>rights_group</name> 
+  <label>rights_group</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>rights_user</name> 
+  <label>rights_user</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>rights_all</name> 
+  <label>rights_all</label> 
+  <type>char(3)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_docfolder</tablename> 
+  <name>foldertype</name> 
+  <label>foldertype</label> 
+  <type>int(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doctype</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_doctype</tablename> 
+  <name>name</name> 
+  <label>name</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+  </dims_mb_field>
+<dims_mb_schema>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <tabledest>dims_mod_docfolder</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <tabledest>dims_module</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <tabledest>dims_user</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <tabledest>dims_workspace</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_param</tablesrc> 
+  <tabledest>dims_mod_docext</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docext</tablesrc> 
+  <tabledest>dims_mod_doctype</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <tabledest>dims_module</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <tabledest>dims_user</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <tabledest>dims_group</tabledest> 
+  </row>
+  </dims_mb_schema>
+<dims_mb_relation>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <fieldsrc>id_docfolder</fieldsrc> 
+  <tabledest>dims_mod_docfolder</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <fieldsrc>id_module</fieldsrc> 
+  <tabledest>dims_module</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <fieldsrc>id_user_create</fieldsrc> 
+  <tabledest>dims_user</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_file</tablesrc> 
+  <fieldsrc>id_workspace</fieldsrc> 
+  <tabledest>dims_workspace</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_doc_param</tablesrc> 
+  <fieldsrc>ext_id</fieldsrc> 
+  <tabledest>dims_mod_docext</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docext</tablesrc> 
+  <fieldsrc>id_doctype</fieldsrc> 
+  <tabledest>dims_mod_doctype</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <fieldsrc>id_module</fieldsrc> 
+  <tabledest>dims_module</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <fieldsrc>id_user_create</fieldsrc> 
+  <tabledest>dims_user</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_docfolder</tablesrc> 
+  <fieldsrc>id_workspace</fieldsrc> 
+  <tabledest>dims_workspace</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+  </dims_mb_relation>
+</dims>

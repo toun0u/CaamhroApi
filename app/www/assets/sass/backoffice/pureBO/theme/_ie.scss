@@ -1,0 +1,48 @@
+.ie8 {
+
+	.menu-wrapper {
+		margin-left: 40px;
+		margin-right: 40px;
+		background-color: transparent;
+
+		.menu li {
+			float: left;
+		}
+
+		.menu .sub-menu li {
+			width: 150px;
+			float: none!important;
+		}
+
+		.sub-menu li a {
+			color: white!important;
+		}
+
+		.right-desk {
+			margin-top: .8em;
+			float: right;
+		}
+	}
+
+	.wrap {
+		margin-top: 60px;
+		margin-left: 40px;
+		margin-right: 40px;
+		width: auto;
+	}
+
+	.path { margin-left: 0; }
+	.tabs { display: none; }
+	#dashboard { margin-left: 0; padding-left: 0; }
+
+	.main {
+		width: 75%;
+		border-right: 2px solid darken(#f2f2f2, 10%);
+	}
+
+	.sidebar { float: left; width: 20%; }
+
+	[class*=icon-] {
+		display: none;
+	}
+}

@@ -1,0 +1,84 @@
+// Mixin Compass imports, like @border-radius(), @border-shadow(), etc.
+@import "compass/css3";
+@import "_core/variables.scss";
+
+@include r(large) {
+
+
+	/* Layouts for large (l) screens */
+	.large-hidden,
+	.tablet-hidden { display: none  !important; }
+	.large-visible { display: block !important; }
+
+	.large-no-float { float: none; }
+
+	.large-inbl {
+		@include inline-block(top);
+		float: none;
+	}
+
+	.large-row {
+		display: table;
+		table-layout: fixed;
+		width: 100% !important;
+	}
+
+	.large-col {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	/* Widths for large (l) screens */
+	.large-w25 { width: 25% !important; }
+	.large-w33 { width: 33.3333% !important; }
+	.large-w50 { width: 50% !important; }
+	.large-w66 { width: 66.6666% !important; }
+	.large-w75 { width: 75% !important; }
+	.large-w100 {
+		display: block  !important;
+		float: none 	!important;
+		clear: none 	!important;
+		width: auto 	!important;
+		margin-left: 0  !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+
+	/* Margins for large (l) screens */
+	.large-ma0,
+	.large-man { margin: 0 !important; }
+
+	// End of reset
+	/* -------------------------------------------------- */
+
+	nav {
+
+		display: inline;
+
+		ul { margin: 0; padding: 0; }
+
+		li {
+			margin: 0 5px 0 0;
+			padding: 0;
+			float: left;
+		}
+
+		a {
+			padding: 30px 5px;
+			display: block;
+			font-size: 1.2em;
+		}
+	}
+
+	.bglight {
+
+		.mod {
+			margin: 0;
+			height: 20em;
+			border-right: 1px solid #7d7d7d;
+
+			&:last-child { border-right: 0; }
+		}
+
+	}
+}

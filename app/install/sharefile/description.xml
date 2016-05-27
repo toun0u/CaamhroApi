@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dims>
+	<moduletype>
+		<label>sharefile</label>
+		<version>1</version>
+		<author>Netlor</author>
+		<date>20121004000000</date>
+		<publicparam>1</publicparam>
+		<description>Partage de fichiers</description>
+		<contenttype>doc</contenttype>
+	</moduletype>
+</dims>

@@ -1,0 +1,35 @@
+
+/* ----------------------------- */
+/* ==iefix */
+/* Fix the core styles 
+/* ----------------------------- */
+
+/* HasLayout for IE6/IE7 */
+.ie67 {
+	.clearfix, .line, .mod, .row, .col {
+		zoom: 1;
+	}
+
+	/* Warning: .col needs a width on IE6/IE7 */
+	.col {
+		display: inline;
+		zoom: 1;
+	}
+
+	/**
+	 * Add a slash at the end of this comment
+	 * If you want to enable box-sizing for IE6/IE7
+	 * with a polyfill 
+	 * Source: https://github.com/Schepp/box-sizing-polyfill *	
+	* {
+		behavior: url(/js/boxsizing.htc);
+	}
+	/**/
+}
+
+/**
+ * 1. Bugfixes for IE8
+ */
+.ie8 img {
+	width: auto; /* 1 */
+}

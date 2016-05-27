@@ -1,0 +1,175 @@
+div#recurs_ged{
+	width: 95%;
+	height: 350px;
+	border: 2px solid #D6D6D6;
+	/*border: 4px solid #CCCCCC;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: hidden;
+	overflow-x: auto;
+	color: #444;
+	/*color: white;*/
+	font-family: Helvetica, Arial, sans-serif;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	/*background-color: #444444;*/
+}
+
+div#recurs_ged div.blocged_interne{
+	height: 100%;
+}
+div#recurs_ged  div.browser_column{
+	overflow: auto;
+	float: left;
+	height: 100%;
+	width: 200px;
+	border-right: 2px solid #D6D6D6;
+}
+div#recurs_ged div.browser_column a{
+	text-decoration: none;
+	display: block;
+	/*color: white;*/
+}
+
+/*div#recurs_ged div.browser_column + div.browser_column {
+
+}*/
+
+div#recurs_ged div.browser_column li.elem{
+	padding: 5px;
+	overflow:hidden;
+}
+
+/*div#recurs_ged div.browser_column li.elem:first-child{
+	margin-top: 5px;
+}*/
+
+div#recurs_ged div.browser_column li.elem table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#recurs_ged div.browser_column li.elem table td{
+	vertical-align: middle;
+}
+
+div#recurs_ged div.browser_column li.elem table td.icone,
+div#recurs_ged div.browser_column li.elem table td.arrow{
+	width: 16px;
+}
+
+div#recurs_ged div.browser_column li.elem table td.arrow{
+	text-align: right;
+}
+
+div#recurs_ged div.browser_column li.selected{
+	/*background-color: #FADCE9;*/
+    background-color: #F1F1F1;
+}
+/*div#recurs_ged div.browser_column li.selected a{
+	color: #444444;
+}*/
+div#recurs_ged div.browser_column li.elem div.has_children{
+	float: right;
+}
+
+div#recurs_ged div.browser_leaf{
+	float: left;
+	min-width: 370px;
+	/*border-right: 1px solid #DEDEDE;*/
+	height: 100%;
+	overflow: auto;
+    border-left: 2px solid #D6D6D6;
+}
+
+div#recurs_ged div.browser_leaf div.pad_interne{
+	padding: 5px;
+}
+div#recurs_ged div.browser_leaf div.entete{
+	overflow:hidden;
+}
+div#recurs_ged div.browser_leaf div.entete div:first-child{
+	margin-right: 10px;
+}
+
+div#recurs_ged div.browser_leaf div.entete div{
+	float: left;
+}
+
+div#recurs_ged div.browser_leaf div.title{
+	width:auto;
+}
+
+div#recurs_ged div.browser_leaf div.entete h3{
+	font-size: 14px;
+	margin: 0px;
+	margin-top: 5px;
+	max-width: 270px;
+}
+div#recurs_ged div.browser_leaf table.data_infos{
+	clear: both;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+div#recurs_ged div.browser_leaf table.data_infos td{
+	vertical-align: middle;
+	height: 80px;
+}
+
+
+div#recurs_ged div.browser_leaf table.data_infos td.preview{
+border: 1px dotted #DEDEDE;
+	padding: 5px;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+}
+
+div#recurs_ged div.browser_leaf td.infos label{
+	font-weight: bold;
+}
+
+div#recurs_ged div.browser_leaf div.space_footer{
+	clear: both;
+	margin-bottom: 15px;
+}
+
+div#recurs_ged div.browser_leaf div.button_actions{
+	clear: both;
+	overflow: hidden;
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+	margin-bottom: 5px;
+}
+
+div#recurs_ged div.browser_leaf div.button_actions div{
+	float: left;
+	line-height: 16px;
+	padding: 5px;
+
+}
+div#recurs_ged div.browser_leaf div.button_actions div img{
+	vertical-align: baseline;
+	margin-right: 3px;
+}
+
+div#recurs_ged div.browser_leaf div.button_actions div + div{
+	margin-left: 5px;
+}
+
+div#recurs_ged div.browser_leaf div.button_actions a{
+	text-decoration: none;
+	color: #777777;
+	/*color: white;*/
+}
+
+/*div#recurs_ged div.browser_leaf div.button_actions a:hover{
+	color: #76de8f;
+}*/

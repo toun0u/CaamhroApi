@@ -1,0 +1,72 @@
+div.bloc_menu_right_content div.footer_alerts{
+	text-align: center;
+}
+div.bloc_menu_right_content div.footer_alerts a{
+	color: #333;
+	text-decoration: underline !important;
+}
+div.alert{
+	color: #333;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+p.alert_date{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3px;
+}
+
+div.alert_title{
+	color: #e40613;
+	font-weight: bold;
+	text-transform:uppercase;
+	margin-bottom: 3px;
+}
+
+div.alert_title a{
+	color: #e40613;
+	font-family: avantgarde-book-webfont, sans-serif;
+}
+
+div.alert_details{
+	overflow: hidden;
+}
+
+div.alert_details div.alert_picto img{
+	width: 25px;
+	height: auto;
+	float: left;
+}
+
+div.alert_details div.alert_description{
+	margin-left: 28px;
+	font-family: arial;
+}
+
+div.alert_full_place{
+	margin-left: 0 !important;
+}
+
+/* Spécificités sur les WCE Objects ----------*/
+span.level_alert{
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+span.low_gravity{
+	background-color: green;
+}
+
+span.middle_gravity{
+	background-color: orange;
+}
+
+span.high_gravity{
+	background-color: red;
+}

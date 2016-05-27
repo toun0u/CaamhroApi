@@ -1,0 +1,1 @@
+{$site.PAGE_CONTENT} 

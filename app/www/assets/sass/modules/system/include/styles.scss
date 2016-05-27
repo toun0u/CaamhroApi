@@ -1,0 +1,242 @@
+div.system_tree {
+	float:left;
+	width:30%;
+}
+
+div.system_tree_padding {
+	padding:4px;
+	overflow:auto;
+}
+
+div.system_main {
+	overflow:hidden;
+	border-left:1px solid #c0c0c0;
+	padding:4px;
+}
+
+div.system_group_icons {
+	float:right;
+	width:150px;
+	background-color:#f0f0f0;
+	height:100%;
+}
+
+div.system_group_icons_padding {
+	padding:4px;
+	overflow:auto;
+}
+
+div.system_group_main {
+	overflow:auto;
+	border-right:1px solid #c0c0c0;
+}
+
+a.planning_planning_action {
+display:block;
+position:absolute;
+overflow:hidden;
+font-size:0.8em;
+text-align:left;
+text-decoration:none;
+color:#000000;
+opacity:0.85;
+z-index:0;
+border:1px solid #a0a0a0;
+}
+
+a.planning_planning_action:hover {
+text-decoration:none;
+color:#000000;
+opacity:1;
+z-index:1;
+border:1px solid #808080;
+}
+
+
+div.planning_planning_heure {
+padding:1px;
+border-bottom:1px solid #c0c0c0;
+float:left;
+}
+
+p.planning_planning_heure {
+margin:0;
+}
+
+p.planning_planning_heure span {
+vertical-align: top;
+display: inline;
+}
+
+span.planning_planning_heure {
+font-weight:bold;
+}
+
+span.planning_planning_minute {
+font-size:0.8em;
+}
+
+div.planning_planning_detail {
+clear:both;
+padding:1px;
+}
+
+div.planning_planning_detail div {
+clear:both;
+}
+
+div.planning_planning_popup {
+font-size:0.8em;
+padding:4px;
+z-index:10;
+}
+
+
+#planning_calendar {
+	padding:4px;
+	background-color:#f0f0f0;
+}
+
+.planning_calendar_row {
+	clear:both;
+	overflow:auto;
+}
+
+.planning_calendar_day_title {
+	background-color:#efeff1;
+	margin:0 1px 0 0;
+}
+
+.planning_calendar_day {
+	position:relative;
+	border:1px solid #c0c0c0;
+	margin:0 1px 1px 0;
+	background-color:#FAFAE9;
+}
+
+
+
+.planning_calendar_day_selected {
+	position:relative;
+	border:1px solid #c0c0c0;
+	margin:0 1px 1px 0;
+	background-color:#f0fbd0;
+}
+
+.planning_calendar_day_today {
+	background-color:#ffffff;
+}
+
+.planning_calendar_arrow {
+	float:left;
+/*	width:100px;
+	height:100px; */
+	text-align:center;
+}
+
+.planning_calendar_userlink {
+	display:block;
+	padding:2px 4px;
+	margin:0 0 1px 1px;
+	/*margin-bottom:1px;*/
+	border:1px solid #c0c0c0;
+	text-decoration:none;
+}
+
+.planning_calendar_userlink:hover {
+	border:1px solid #808080;
+	text-decoration:none;
+}
+
+.toolbar {
+clear:both;
+padding-bottom:2px;
+overflow:auto;
+}
+
+.toolbar_left {
+}
+
+.toolbar_right {
+float:right;
+}
+
+.toolbar_icon_vertical {
+display:block;
+border:1px solid #a0a0a0;
+margin-bottom:2px;
+background-color:#ffffff;
+padding:1px;
+overflow:auto;
+}
+
+.toolbar_icon_vertical a {
+display:block;
+color:#000000;
+background-color:#f0f0f0;
+text-decoration:none;
+opacity:0.8;
+}
+
+.toolbar_icon_vertical a:hover {
+background-color:#e0e0e0;
+text-decoration:none;
+opacity:1;
+}
+
+.toolbar_icon {
+display:block;
+float:left;
+border:1px dotted #a0a0a0;
+margin-right:2px;
+background-color:#ffffff;
+padding:1px;
+}
+
+.toolbar_icon a {
+display:block;
+color:#000000;
+background-color:#f0f0f0;
+text-decoration:none;
+opacity:0.8;
+}
+
+.toolbar_icon a:hover {
+background-color:#e0e0e0;
+text-decoration:none;
+opacity:1;
+}
+
+.toolbar_icon_image {
+background-color:#ffffff;
+text-align:center;
+border-bottom:1px solid #d0d0d0;
+padding:4px;
+}
+
+.toolbar_icon_title {
+text-align:center;
+padding:2px 10px;
+background-color:#ffffff;
+}
+
+.toolbar_icon_sel {
+display:block;
+float:left;
+border:1px solid #4E68A6;
+margin-right:2px;
+background-color:#4E68A6;
+padding:1px;
+}
+
+.toolbar_icon_sel a {
+display:block;
+color:#000000;
+background-color:#e0e0e0;
+}
+
+.toolbar_icon_sel a:hover {
+background-color:#d0d0d0;
+text-decoration:none;
+}
+

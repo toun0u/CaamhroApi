@@ -1,0 +1,210 @@
+@include r(small) {
+
+	.wrap {
+		padding: 1em;
+	}
+
+	.js .menu-wrapper nav[role=navigation] {
+		overflow:hidden;
+		max-height: 0em;
+
+	}
+	.js .menu-wrapper nav[role=navigation].active {
+		max-height: 30em;
+		transition: max-height 0.5s ease-out;
+	}
+
+	.menu-wrapper {
+
+		a.menu-link{
+			display:block;
+			width:auto;
+			padding-right:15px;
+			padding-left:10px;
+			border:none;
+			margin:0;
+			color: white;
+			background-color: darken(#444444, 10%);
+
+			&.active .ico-caret-down:before{
+				content: "\f0d8";
+			}
+		}
+
+		.menu .menu{
+			padding-bottom: 5px;
+		}
+
+		.menu  li {
+			display:block;
+			border:1px solid navy;
+			border:none;
+		}
+
+		.menu > li {
+			padding:0px;
+			border:none;
+
+			& + li {
+				border-top:1px dashed #f2f2f2;
+			}
+		}
+
+		.menu a {
+			padding: 15px 0;
+			margin:0px;
+			border:none;
+			font-size: 1.4em;
+			color: white;
+			border-bottom: 1px dashed gray;
+
+			&:hover{
+				background: $main-color ;
+			}
+		}
+
+		.menu .rightalign {
+			float:none;
+		}
+
+		li + li a:before {
+			content:"";
+		}
+
+		/* unhide the 2nd level */
+		li:hover .sub-menu{
+			max-height: 0em;
+			transition:none;
+		}
+
+		.sub-menu{
+			background:none;
+			margin-left:0px;
+			margin-top:1px;
+			display:block;
+			width: 100%;
+
+			li,
+			li a{
+				margin:0;
+				display:block;
+				width:100%;
+				background-color: darken(#444, 10%);
+			}
+
+			a{
+				padding-left:0.8em;
+
+				&:hover{
+				   background: $main-color;
+				}
+			}
+
+			li{
+				border-bottom:1px dashed darken(#f2f2f2, 10%);
+			}
+
+			li:last-child{
+				padding:0;
+
+				a{
+					border:none;
+				}
+			}
+		}
+
+		.menu .has-subnav{
+			position:relative;
+		}
+
+		li .sub-menu.active{
+			max-height: 30em;
+			overflow:visible;
+			position:relative;
+			z-index:9;
+			transition: max-height 0.5s ease-out;
+		}
+
+		/* styling the toggle menu */
+		.toggle-link{
+			height:53px;
+			width: 60px;
+			display:block;
+			position:absolute;
+			right:0px;
+			z-index:200;
+			font-size:0em;
+			cursor:pointer;
+			font-family: 'Ico';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			background-color: darken(#444, 5%);
+			@include border-radius(5px 0 0 5px);
+			&:hover{
+				transition:all 0.2s;
+				background: darken(#444444, 10%);
+			}
+		}
+
+		/* arrow to indicate that we have subnav*/
+		.menu .has-subnav > .toggle-link:after{
+			content: "\25BE";
+			position:absolute;
+			width:50px;
+			top:50%;
+			margin-top:-15px;
+			bottom:50%;
+			right:4px;
+			font-size:28px;
+			color:#fff;
+		}
+
+		.menu .has-subnav  > .toggle-link.active:after{
+			content: "\25B4";
+			margin-top:-18px;
+		}
+	}
+
+	#brodash { font-size: .7em; }
+
+	#dashmenu {
+		a {
+			font-size: 1.2em;
+		}
+
+		.current-menu-item {
+			background-color: darken($main-color,10%);
+		}
+	}
+
+	.main {
+		border-bottom: 2px solid #d7d7d7
+	}
+
+	.mt2p { margin-top: 20px; }
+
+	.form-align {
+
+		margin-bottom: 10px;
+
+		label {
+			text-align: center;
+			width: auto;
+			display: block;
+		}
+
+		select,
+		input {
+			width: 100%!important;
+		}
+
+		textarea {
+			padding: 5px;
+			width: 100%!important;
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+div.zone_folders {
+	float: left;
+}
+
+div.title_folders > img {
+	float: right;
+}
+
+div.zone_folders > table {
+	margin-left: 10px;
+}
+
+div.zone_folders td > a {
+	font-size: 14px;
+}
+
+div.title_folders {
+	border-bottom: 1px solid #D6D6D6;
+	float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+h2.folders_h2 {
+	padding-bottom: 10px;
+}

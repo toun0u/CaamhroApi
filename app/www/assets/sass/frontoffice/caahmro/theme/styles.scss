@@ -1,0 +1,181 @@
+@import "compass/css3"; // Import compass
+@import "../basic/basic.scss";
+
+$header-color: #fff;
+$phoneheader-color: #3F3F3F;
+$vert: #b4e226;
+$bleu: #0982C1;
+$bleufonce: #47C9DC;
+
+@import "fonts.scss";
+@import "global.scss";
+@import "slider.scss";
+
+@import "phone.scss";
+@import "tablet.scss";
+@import "desk.scss";
+
+@import "form.scss";
+@import "ie.scss";
+@import "menu.scss";
+
+@import "table.scss";
+
+/* Flash popup */
+#flashpopup {
+	background: none repeat scroll 0 0 #42a0e0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	left: 45%;
+	top: 45%;
+	padding: 10px;
+	position: fixed;
+	display: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* Liens de pagination */
+#liens_pagination {
+	float: right;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	clear: both;
+
+}
+#liens_pagination span {
+	color: #404040;
+}
+#liens_pagination > span.current {
+	width: auto;
+	height: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #F94A0A;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#liens_pagination a {
+	width: auto;
+	height: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #5A5B61;
+	text-decoration: none;
+	color: #ffffff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#liens_pagination a:hover {
+	background-color: #F94A0A;
+	color: #ffffff;
+}
+
+/* ------------ OVERLAY BOX ------------- */
+
+.overlay {
+	background: transparent url(/assets/images/frontoffice/caahmro/design/overlay.png) repeat top left;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
+.msgbox {
+	position: absolute;
+	width: 800px;
+	top: -4000px;
+	left: 20%;
+	background-color: #fff;
+	color: #7f7f7f;
+	padding: 20px;
+	border: 2px solid #ccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 1px 12px #333;
+	-webkit-box-shadow: 1px 1px 12px #333;
+	box-shadow: 1px 1px 12px #333;
+	z-index: 101;
+}
+.msgbox a {
+	color: #a60000;
+	text-decoration: none;
+}
+
+.msgbox td {
+	padding: 0;
+}
+
+a.msgboxclose {
+	float: right;
+	width: 32px;
+	height: 32px;
+	background: transparent url(/assets/images/frontoffice/caahmro/design/fermer.png) repeat top left;
+	margin-top: -30px;
+	margin-right: -30px;
+	cursor: pointer;
+}
+
+.ienomore{
+	background-color:#f2dede;
+	color:#a94442;
+	border-bottom:1px solid #a94442;
+	padding:10px;
+	text-align:center;
+	table{
+		width:auto;
+		border: 0px;
+		margin-left:auto;
+		margin-right:auto;
+		td{
+			background-color:#f2dede;
+			color:#a94442;
+			width: 40px;
+			vertical-align: top;
+			.navigateur{
+				font-size:3em;
+				text-decoration: none;
+				color:#333333;
+			}
+			.navigateur:hover,
+			.navigateur:active,
+			.navigateur:active{
+				background-color:#f2dede;
+			}
+		}
+		td:first-child{
+			.icon2-warning{
+				font-size:5em;
+			}
+			text-align:right;
+			width: auto !important;
+			min-width:150px;
+		}
+		td:nth-child(2){
+			width: 400px !important;
+		}
+	}
+}
+
+ul.references {
+	list-style-position: inside;
+	li {
+		float: left;
+		width: 32%;
+	}
+}
+
+.prix-net-color {
+	color: #00cc00;
+}

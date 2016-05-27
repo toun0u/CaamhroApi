@@ -1,0 +1,25 @@
+# Cree par Pat le 01/01/2009
+# En tant que root :
+# update-alternatives --config java
+# apt-get install openoffice.org-headless
+# apt-get install openoffice.org-java-common python-uno openoffice.org
+
+
+# http://forums.alfresco.com/en/viewtopic.php?f=8&t=12341
+
+xvfb-run -a soffice -headless "-accept=socket,host=localhost,port=2002;urp;" &
+
+# ou si interface graphique :
+/usr/bin/soffice "-accept=socket,host=localhost,port=2002;urp;" -headless -nologo &
+
+apt-get install openoffice.org xvfb
+apt-get install xfonts-base xfonts-75dpi xfonts-100dpi
+xvfb-run -a /usr/lib/openoffice/program/soffice -headless -nologo -norestore -nofirststartwizard &
+
+/usr/bin/soffice -headless accept="socket,host=localhost,port=8100;urp;" -nofirststartwizard &
+
+sous Squeeze
+/usr/bin/soffice -headless
+
+
+/Applications/OpenOffice.org.app/Contents/MacOS/soffice "-accept=socket,host=localhost,port=8100;urp;" -headless -nologo

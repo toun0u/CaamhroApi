@@ -1,0 +1,19 @@
+/* Etape 5 new opportunity */
+
+div.tags_of_opportunity{
+    width: auto !important;
+}
+
+div.tags_of_opportunity table{
+    width: auto !important;
+}
+
+/* Adresse Book */
+
+div.fiche_contact_container{
+    overflow-x: hidden !important;
+}
+
+div.fiche_contact_AB table{
+    width: 96% !important;
+}

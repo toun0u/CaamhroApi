@@ -1,0 +1,180 @@
+/* *************************************** */
+/*										   */
+/* Global configuration of core folder:    */
+/* Contain variables and mixins: ;		   */
+/*										   */
+/* *************************************** */
+/* ==reset */
+/* Following variables are in core/_reset.scss */
+/* ------------------------------------------- */
+/* ==breakpoints */
+/* Following variables are in the end of this file  */
+/* ------------------------------------------------ */
+/* ==table */
+/* Following variables are in core/_table.scss */
+/* ------------------------------------------- */
+/* ==grid */
+/* Following variables are in core/_grid.scss  */
+/* ------------------------------------------- */
+/* ==form */
+/* Following variables are in core/_form.scss */
+/* ------------------------------------------ */
+/* ==flash */
+/* Following variables are in core/_helpers.scss */
+/* --------------------------------------------- */
+/* ------------------------------------------ */
+/* Your others variables: 		 		      */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ==mixisn */
+/* ------------------------------------------- */
+/* Defines the breakpoints for each display */
+/**
+ * Mixin handling REM with PX fallback
+ * Takes either PX or REM as input
+ * Outputs both in appropriate order
+ */
+@media (max-width: 640px) {
+  /* Quick smartphone reset */
+  /* line 11, ../../sass/basic/phone.scss */
+  .mod,
+  .item,
+  .col,
+  fieldset {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* line 27, ../../sass/basic/phone.scss */
+  .w30,
+  .w33,
+  .w40,
+  .w50,
+  .w300p,
+  .w400p,
+  .w500p {
+    width: auto;
+  }
+
+  /* line 31, ../../sass/basic/phone.scss */
+  .row {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Layouts for tiny (t) screens */
+  /* line 38, ../../sass/basic/phone.scss */
+  .tiny-hidden,
+  .phone-hidden {
+    display: none !important;
+  }
+
+  /* line 39, ../../sass/basic/phone.scss */
+  .tiny-visible {
+    display: block !important;
+  }
+
+  /* line 41, ../../sass/basic/phone.scss */
+  .tiny-no-float {
+    float: none;
+  }
+
+  /* line 43, ../../sass/basic/phone.scss */
+  .tiny-inbl {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    float: none;
+  }
+
+  /* line 48, ../../sass/basic/phone.scss */
+  .tiny-row {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
+  /* line 54, ../../sass/basic/phone.scss */
+  .tiny-col {
+    display: table-cell !important;
+    vertical-align: top !important;
+  }
+
+  /* line 60, ../../sass/basic/phone.scss */
+  th,
+  td {
+    display: block !important;
+    width: auto !important;
+    text-align: left !important;
+  }
+
+  /* line 66, ../../sass/basic/phone.scss */
+  thead {
+    display: none;
+  }
+
+  /* widths for tiny (t) screens */
+  /* line 69, ../../sass/basic/phone.scss */
+  .tiny-w25 {
+    width: 25% !important;
+  }
+
+  /* line 70, ../../sass/basic/phone.scss */
+  .tiny-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 71, ../../sass/basic/phone.scss */
+  .tiny-w50 {
+    width: 50% !important;
+  }
+
+  /* line 72, ../../sass/basic/phone.scss */
+  .tiny-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 73, ../../sass/basic/phone.scss */
+  .tiny-w75 {
+    width: 75% !important;
+  }
+
+  /* line 75, ../../sass/basic/phone.scss */
+  .tiny-w100 {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* Margins for tiny (t) screens */
+  /* line 87, ../../sass/basic/phone.scss */
+  .tiny-ma0,
+  .tiny-man {
+    margin: 0 !important;
+  }
+
+  /* line 89, ../../sass/basic/phone.scss */
+  [class*=grid] > * {
+    float: left;
+  }
+  /* line 91, ../../sass/basic/phone.scss */
+  [class*=grid] > * + * {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+
+  /* -------------------------------------------------- */
+  /* Write your instructions just at the bottom of this */
+}

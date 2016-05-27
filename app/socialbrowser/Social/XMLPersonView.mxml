@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+	 backgroundColor="0x999999" verticalScrollPolicy="off" horizontalScrollPolicy="off"
+	backgroundAlpha="{calcAlpha()}"
+	filters="{calcFilters(app().roamer.currentItem, data as Item)}" themeColor="#ff00ff">	
+	<mx:states>
+		<mx:State name="selected">
+			<mx:SetProperty target="{maincanvas}" name="width" value="155"/>
+			<mx:SetProperty target="{maincanvas}" name="height" value="123"/>
+			<mx:SetStyle target="{image}" name="right" value="0"/>
+			<mx:SetStyle target="{linkbutton1}" name="top" value="92"/>
+			<mx:SetStyle target="{linkbutton1}" name="bottom" value="0"/>
+			<mx:SetStyle target="{linkbutton1}" name="left" value="121"/>
+			<mx:SetStyle target="{linkbutton1}" name="right" value="0"/>
+			<mx:SetStyle target="{text1}" name="bottom" value="10"/>
+			<mx:SetStyle target="{text1}" name="top" value="91"/>
+			<mx:SetStyle target="{text1}" name="left" value="10"/>
+			<mx:SetStyle target="{text1}" name="right" value="18"/>
+			<mx:SetStyle target="{image}" name="bottom" value="30"/>
+			<mx:SetProperty target="{image}" name="scaleContent" value="true"/>
+		</mx:State>
+	</mx:states>
+	<mx:transitions>
+
+        <mx:Transition id="controlTransition" fromState="*" toState="*" >
+
+            <mx:Parallel>
+				
+				<mx:Resize target="{maincanvas}" duration="400"/>
+	
+
+            </mx:Parallel>
+
+        </mx:Transition>
+
+	</mx:transitions>
+	
+	<!--
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	//  Copyright (C) 2006 Adobe Macromedia Software LLC and its licensors.
+	//  All Rights Reserved. The following is Source Code and is subject to all
+	//  restrictions on such code as contained in the End User License Agreement
+	//  accompanying this product.
+	//
+	////////////////////////////////////////////////////////////////////////////////
+	-->
+	
+	<!-- XMLItemView.mxml is the item renderer component for one XML item. We simply display the 'prop' 
+	     attribute of the XML item in a colored box.
+	     {(app().roamer.dataProvider as Graph).numLinks(data as Item)/10.0 > 1 ? 1.0 : (app().roamer.dataProvider as Graph).numLinks(data as Item)/10.0}
+	      -->
+				
+	<mx:Canvas width="206" height="61" backgroundColor="#663366" dropShadowEnabled="true" dropShadowColor="#FFFFFF" 
+		backgroundAlpha="{calcAlpha()}" id="maincanvas" verticalScrollPolicy="off" horizontalScrollPolicy="off" >
+		<mx:Text fontSize="10" text="{data.data.@name}" color="#FFFFFF" selectable="false" right="0" left="62" top="0" bottom="26" textAlign="center" id="text1"/>
+		<mx:Image  id="image" bottom="0" right="152" top="0" left="0"  alpha="{calcAlpha()}" scaleContent="true">
+		<!--<mx:source>http://emm-labs.jrc.it:8080/LiveNews/LiveNews?picId={data.data.@id}</mx:source> -->
+			<mx:source>
+				{getPhoto(data.data.@id)}
+			</mx:source>
+		</mx:Image>
+		<mx:LinkButton label="Explore" right="10" bottom="4" top="43" left="144"
+			click="navigate()" fontFamily="Arial" fontSize="6" color="#f0f0f0" id="linkbutton1"/>
+		
+	</mx:Canvas>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.effects.Glow;
+			import com.adobe.flex.extras.controls.springgraph.Graph;
+			import com.adobe.flex.extras.controls.springgraph.Item;
+			import mx.core.Application;
+			import mx.controls.Alert;
+			
+			public function doubleClick(event: Event): void {
+				//this.currentState='selected';
+				app().itemDoubleClick(event);
+			}
+			
+			private function app(): Social {
+				return Application.application as Social;
+			}
+			private function calcAlpha(): Number{
+/************************check here*/
+				var val:Number= (app().roamer.dataProvider as Graph).numLinks(data as Item)/3.0; //divider to change: if nb of links=3 then max opacity
+				if (val > 1.0) val=1.0;
+
+			    return val;
+			}
+			
+			/**
+			 * There is no event listener defined so this function does not do anything
+			 */
+			private function mouseOver():void {
+				maincanvas.alpha=1.0;
+				image.alpha=1.0;
+				this.alpha=1.0;
+			}
+			/**
+			 * There is no event listener defined so this function does not do anything
+			 */
+			private function mouseOut():void {
+				maincanvas.alpha = calcAlpha();
+				image.alpha= calcAlpha();
+				this.alpha = calcAlpha();
+			}
+			private function navigate():void{
+/************************check here*/
+				var page:String= 'http://press.jrc.it/NewsExplorer/entities/en/'+data.data.@id+'.html';
+				navigateToURL(new URLRequest(page), '_blank');
+			}
+			/* This function gets called whenever the graph's current item changes,
+			 * or when our data changes, to calculate the borderthickness.
+			 */
+			private function calcFilters(currentItem: Item, item: Item): Array {
+				if(app().roamer.currentItem == item) {
+					return [new GlowFilter(0xFFFF00, 0.5, 8, 8, 2, 1)];
+				} else if(app().roamer.hasBeenCurrentItem(item)) {
+					return [new GlowFilter(0xFF0000, 0.3, 6, 6, 2, 1)];
+				} else {
+					return null;
+				}
+			}
+			private function getPhoto(id:String):String {
+/************************check here*/
+	        	var url:String = "http://press.jrc.it/NewsExplorer/photos/"
+	        	var pcount:int = 9-id.length;
+	        	var pad:String="";
+	        	for (var i:int=0;i<pcount;i++)
+	        	 pad+="0";
+	        	pad+=id;
+	        	url += pad.substr(0,3)+"/"+pad.substr(3,3)+"/"+id+".jpg";
+	        	//Alert.show("id :"+id+"url :"+url);
+	        	return url;
+	        		
+	        }
+			
+			/* This function gets called whenever the graph's current item changes,
+			 * or when our data changes, to calculate a color based on our distance
+			 * from the current item. 
+			 */
+			 /* backgroundColor="{calcColor(app().roamer.currentItem, data as Item)}"
+			 
+			private function calcColor(currentItem: Item, item: Item): int {
+				switch (app().roamer.distance(currentItem, item)) {
+					case 0:
+						return 0x5555ee;
+					//default:
+					case 1:
+						return 0x7777bb;
+					default:
+						return 0x999999;
+				}
+			}
+			*/
+		]]>
+	</mx:Script>				
+</mx:VBox>
+				

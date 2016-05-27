@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<xsd:element name="ddo">
+				<xsd:complexType>
+						<xsd:sequence>
+								<xsd:element name="context" type="Context" minOccurs="1" maxOccurs="1"/>
+								<xsd:element name="identity" type="Identity" minOccurs="1" maxOccurs="1"/>
+								<xsd:element name="fields" type="Fields" minOccurs="0" maxOccurs="1"/>
+								<xsd:element name="relations" type="Relations" minOccurs="0" maxOccurs="1"/>
+						</xsd:sequence>
+
+						<xsd:attribute name="mode" use="required">
+								<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:enumeration value="add"/>
+											<xsd:enumeration value="update"/>
+											<xsd:enumeration value="delete"/>
+										</xsd:restriction>
+								</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="tablename" type="xsd:string" use="required"/>
+						<xsd:attribute name="classname" type="xsd:string" use="required"/>
+				</xsd:complexType>
+		</xsd:element>
+
+		<xsd:complexType name="Context">
+				<xsd:sequence>
+						<xsd:element name="id_sync" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="dims_key" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+
+						<xsd:element name="id_dims_local" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="local_goid" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="local_record_id" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="local_timestp" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+
+						<xsd:element name="id_dims_origin" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="id_object_origin" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="id_dims_owner" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+
+						<xsd:element name="corresp_id" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+
+						<xsd:element name="id_module_type" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="id_object" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+				</xsd:sequence>
+		</xsd:complexType>
+		<xsd:complexType name="Identity">
+				<xsd:sequence>
+						<xsd:element name="id" type="Field" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:complexType name="Fields">
+				<xsd:sequence>
+						<xsd:element name="field" type="Field" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:complexType name="Relations">
+				<xsd:sequence>
+						<xsd:element name="go_relation" type="Relation" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:complexType name="Field">
+				<xsd:simpleContent>
+				  <xsd:extension base="xsd:string">
+						<xsd:attribute name="name" type="xsd:string" use="required"/>
+						<xsd:attribute name="requis" type="xsd:integer" use="required"/>
+				  </xsd:extension>
+				</xsd:simpleContent>
+		</xsd:complexType>
+
+		<xsd:complexType name="Relation">
+			<xsd:sequence>
+				<xsd:element name="id_object" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="id_record" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="id_dims_origin" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="id_object_origin" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="corresp_id" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:attribute name="type">
+				<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="has_one"/>
+							<xsd:enumeration value="has_many"/>
+							<xsd:enumeration value="belongs_to"/>
+						</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+			<xsd:attribute name="class_on" type="xsd:integer"/>
+			<xsd:attribute name="on" type="xsd:string"/>
+			<xsd:attribute name="class_to" type="xsd:integer" />
+			<xsd:attribute name="to" type="xsd:string" />
+			<xsd:attribute name="data_type" type="xsd:integer" />
+		</xsd:complexType>
+</xsd:schema>

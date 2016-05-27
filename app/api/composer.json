@@ -1,0 +1,20 @@
+{
+    "name": "dims/ws-resa",
+    "description": "Web service allowing the bridge between Dims and an app",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Netlor SAS",
+            "email": "contact@netlor.fr",
+            "homepage": "http://www.netlor.fr/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@netlor.fr"
+    },
+    "require": {
+        "slim/slim": "2.4.3",
+        "michelf/php-markdown": "1.4.1"
+    }
+}

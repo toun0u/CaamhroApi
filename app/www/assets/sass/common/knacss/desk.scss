@@ -1,0 +1,122 @@
+/* *************************************** */
+/*										   */
+/* Global configuration of core folder:    */
+/* Contain variables and mixins: ;		   */
+/*										   */
+/* *************************************** */
+/* ==reset */
+/* Following variables are in core/_reset.scss */
+/* ------------------------------------------- */
+/* ==breakpoints */
+/* Following variables are in the end of this file  */
+/* ------------------------------------------------ */
+/* ==table */
+/* Following variables are in core/_table.scss */
+/* ------------------------------------------- */
+/* ==grid */
+/* Following variables are in core/_grid.scss  */
+/* ------------------------------------------- */
+/* ==form */
+/* Following variables are in core/_form.scss */
+/* ------------------------------------------ */
+/* ==flash */
+/* Following variables are in core/_helpers.scss */
+/* --------------------------------------------- */
+/* ------------------------------------------ */
+/* Your others variables: 		 		      */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ==mixisn */
+/* ------------------------------------------- */
+/* Defines the breakpoints for each display */
+/**
+ * Mixin handling REM with PX fallback
+ * Takes either PX or REM as input
+ * Outputs both in appropriate order
+ */
+@media (min-width: 1024px) {
+  /* Layouts for large (l) screens */
+  /* line 9, ../../sass/basic/desk.scss */
+  .large-hidden,
+  .tablet-hidden {
+    display: none !important;
+  }
+
+  /* line 10, ../../sass/basic/desk.scss */
+  .large-visible {
+    display: block !important;
+  }
+
+  /* line 12, ../../sass/basic/desk.scss */
+  .large-no-float {
+    float: none;
+  }
+
+  /* line 14, ../../sass/basic/desk.scss */
+  .large-inbl {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    float: none;
+  }
+
+  /* line 19, ../../sass/basic/desk.scss */
+  .large-row {
+    display: table;
+    table-layout: fixed;
+    width: 100% !important;
+  }
+
+  /* line 25, ../../sass/basic/desk.scss */
+  .large-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  /* Widths for large (l) screens */
+  /* line 31, ../../sass/basic/desk.scss */
+  .large-w25 {
+    width: 25% !important;
+  }
+
+  /* line 32, ../../sass/basic/desk.scss */
+  .large-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 33, ../../sass/basic/desk.scss */
+  .large-w50 {
+    width: 50% !important;
+  }
+
+  /* line 34, ../../sass/basic/desk.scss */
+  .large-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 35, ../../sass/basic/desk.scss */
+  .large-w75 {
+    width: 75% !important;
+  }
+
+  /* line 36, ../../sass/basic/desk.scss */
+  .large-w100 {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* Margins for large (l) screens */
+  /* line 48, ../../sass/basic/desk.scss */
+  .large-ma0,
+  .large-man {
+    margin: 0 !important;
+  }
+}

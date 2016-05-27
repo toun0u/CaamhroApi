@@ -1,0 +1,59 @@
+tr.even {
+   background-color: #fff;
+}
+tr.odd {
+   background-color: #ffc;
+}
+tr.marked {
+   background-color: #fc9;
+}
+
+td.ico_grp {
+   width: 20px;
+   background: url(../../../../common/modules/catalogue/img/ico_group.gif) center no-repeat;
+}
+
+td.ico_solo {
+   width: 20px;
+   background: url(../../../../common/modules/catalogue/img/ico_user_orange.gif) center no-repeat;
+}
+
+#cata_wcemodule {
+
+}
+
+#cata_wcemodule form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cata_wcemodule form h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cata_wcemodule form div.infos {
+    overflow: hidden;
+    height: auto;
+}
+
+#cata_wcemodule form div.infos label {
+    float: left;
+    width: 200px;
+}
+
+.tableauData {
+	width: 100%;
+	border-collapse: collapse;
+}
+.tableauData td, .tableauData th {
+	border: 1px solid #c0c0c0;
+	padding: 4px;
+    font-size: 0.9em;
+}
+.tableauData th { background-color: #d0d0d0; }
+.tableauData tr.ligne0 { background-color: #f0f0f0; }
+.tableauData tr.ligne1 { background-color: #f8f8f8; }
+
+.center { text-align: center; }
+.right { text-align: right; }

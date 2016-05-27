@@ -1,0 +1,35 @@
+div.zone_explore_inet{
+    background-color: #F1F1F1;
+    padding: 5px;
+    width: 100%;
+}
+
+div.zone_explore_inet h1{
+    width: 100%;
+//    font-size:
+    font-weight: bold;
+}
+
+div.zone_explore_inet > table > tr > td > img{
+    float: left;
+
+}
+
+div.zone_explore_inet > table span{
+    float: left;
+    width: 100%;
+}
+
+div.zone_explore_inet_content{
+    width: 100%;
+}
+
+div.zone_explore_inet_content_gauche{
+    clear: both;
+    float: left;
+    width: 74%;
+}
+
+div.zone_explore_inet_content_droite{
+    width: 25%;
+}

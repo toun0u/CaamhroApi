@@ -1,0 +1,86 @@
+#doc_preview_popup div.preview{
+    height: 675px !important;
+    padding-bottom: 10px;
+}
+div.selector{
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border: 1px solid #D6D6D6;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+}
+div.selector span{
+    float: left;
+}
+span.img_previous, span.img_next{
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    height: 20px;
+}
+span.select_page select{
+
+}
+span.select_page label{
+    font-weight: bold;
+}
+span.img_plus, span.img_moins{
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    height: 20px;
+}
+span.img_plus img, span.img_moins img{
+    margin-top: 4px;
+}
+div.thumbnail{
+    float:left;
+    text-align: center;
+    background-color: #EEEEEE;
+    border: 1px solid #D6D6D6;
+    height: 100%;
+    display: block;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+div.thumbnail ul li{
+    padding: 5px;
+}
+div.thumbnail ul li:first-child{
+    padding-top: 10px;
+}
+div.thumbnail ul li img{
+    border: 1px solid #D6D6D6;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+div.thumbnail ul li img.selected{
+    border: 1px solid #DF1D31;
+}
+div.thumbnail ul li div.num_page{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+div.thumbnail ul li div.num_page.selected{
+    color: #DF1D31;
+}
+div.content_visu{
+    background-color: #EEEEEE;
+    float:left;
+    border-right: 1px solid #D6D6D6;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+    display: block;
+    margin: 0px;
+}
+div.content_visu img{
+    border: 1px solid #D6D6D6;
+    margin: 10px;
+    background-color: #FFFFFF;
+}

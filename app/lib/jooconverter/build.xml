@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JOOConverter" basedir="." default="webapp">
+
+	<property name="jar.version" value="2.0rc2"/>
+
+	<property name="jar.name" value="jooconverter-${jar.version}.jar"/>
+
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="classes"/>
+		<delete file="${jar.name}"/>
+		<delete dir="web/WEB-INF/classes"/>
+		<delete dir="web/WEB-INF/lib"/>
+	</target>
+
+	<target name="prepare">
+		<tstamp/>
+	</target>
+
+	<target name="compile" depends="prepare">
+		<mkdir dir="classes"/>
+		<javac srcdir="src" destdir="classes" classpathref="compile.classpath" source="1.4" target="1.4"/>
+		<copy todir="classes">
+			<fileset dir="src">
+				<include name="**/*.xml"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${jar.name}" manifest="conf/manifest.txt" basedir="classes"/>
+	</target>
+
+	<path id="compile.webapp.classpath">
+		<fileset file="${jar.name}"/>
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="lib/web">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="/home/mirko/tools/tomcat-5.5.12" includes="common/lib/servlet-api.jar"/>
+	</path>
+
+	<target name="compile-webapp" depends="jar">
+		<mkdir dir="web/WEB-INF/classes"/>
+		<javac srcdir="web/WEB-INF/src" destdir="web/WEB-INF/classes" classpathref="compile.webapp.classpath" source="1.4" target="1.4"/>
+	</target>
+
+	<target name="webapp" depends="compile-webapp">
+		<mkdir dir="web/WEB-INF/lib"/>
+		<copy todir="web/WEB-INF/lib">
+			<fileset file="${jar.name}"/>
+			<fileset dir="lib" includes="*.jar"/>
+			<fileset dir="lib/web" includes="*.jar"/>
+		</copy>
+	</target>
+
+</project>

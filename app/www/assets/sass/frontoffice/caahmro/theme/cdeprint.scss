@@ -1,0 +1,27 @@
+@import "compass/css3"; // Import compass
+@import "../basic/basic.scss";
+
+$header-color: #fff;
+$phoneheader-color: #3F3F3F;
+$vert: #b4e226;
+$bleu: #287ABF;
+$bleufonce: #47C9DC;
+
+@import "fonts.scss";
+@import "global.scss";
+@import "table.scss";
+
+.tableauRecap {
+	width: 100%;
+	border-collapse: collapse;
+}
+.tableauRecap td, th {
+	border: 1px solid #c0c0c0;
+	padding: 4px;
+	font-size: 0.9em;
+}
+.tableauRecap th { background-color: $bleu; color: white; }
+.tableauRecap tr.ligne0 { background-color: #f0f0f0; }
+.tableauRecap tr.ligne1 { background-color: #f8f8f8; }
+.tableauRecap tr.group { background-color: #D0F5FF; }
+.tableauRecap tr.ligneTotal { background-color: #f0f0f0; font-weight: bold; }

@@ -1,0 +1,2 @@
+Main-Class: net.sf.jooreports.tools.ConvertDocument
+Class-Path: lib/commons-logging-1.0.4.jar lib/juh-2.0.jar lib/jurt-2.0.jar lib/ridl-2.0.jar lib/sandbox-2.0.jar lib/unoil-2.0.jar lib/xstream-1.1.2.jar

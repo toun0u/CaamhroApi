@@ -1,0 +1,3 @@
+<?
+echo "partie de droite";
+?>

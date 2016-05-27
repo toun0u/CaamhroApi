@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<dims>
+<dims_mb_object>
+<row>
+  <id>1</id>
+  <label>Article</label>
+  <script>dims_moduleid=&lt;IDMODULE&gt;&amp;dims_action=admin&amp;op=article_modify&amp;type=draft&amp;articleid=&lt;IDRECORD&gt;</script>
+</row>
+<row>
+  <id>2</id>
+  <label>Article</label>
+  <script>dims_moduleid=&lt;IDMODULE&gt;&amp;dims_action=admin&amp;op=article_modify&amp;type=draft&amp;articleid=&lt;IDRECORD&gt;</script>
+</row>
+</dims_mb_object>
+
+<dims_mb_table>
+<row>
+  <name>dims_mod_wce_article</name> 
+  <label /> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_wce_heading</name> 
+  <label>ext</label> 
+  <visible>1</visible> 
+</row>
+</dims_mb_table>
+
+<dims_mb_field>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible>
+  <id_object>1</id_object>
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>reference</name> 
+  <label>reference</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>title</name> 
+  <label>title</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content1</name> 
+  <label>content1</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content2</name> 
+  <label>content2</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content3</name> 
+  <label>content3</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content4</name> 
+  <label>content4</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content5</name> 
+  <label>content5</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content6</name> 
+  <label>content6</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content7</name> 
+  <label>content7</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content8</name> 
+  <label>content8</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>content9</name> 
+  <label>content9</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>author</name> 
+  <label>author</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>version</name> 
+  <label>version</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>visible</name> 
+  <label>visible</label> 
+  <type>tinyint(1)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>timestp</name> 
+  <label>timestp</label> 
+  <type>bigint(14) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>timestp_published</name> 
+  <label>timestp_published</label> 
+  <type>bigint(14) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>timestp_unpublished</name> 
+  <label>timestp_unpublished</label> 
+  <type>bigint(14) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>id_heading</name> 
+  <label>id_heading</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>  
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>position</name> 
+  <label>position</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row> 
+<row>
+  <tablename>dims_mod_wce_article</tablename> 
+  <name>status</name> 
+  <label>status</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row> 
+ 
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  <id_object>2</id_object>
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>label</name> 
+  <label>label</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>description</name> 
+  <label>description</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>template</name> 
+  <label>template</label> 
+  <type>varchar(255)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>id_heading</name> 
+  <label>id_heading</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>parents</name> 
+  <label>parents</label> 
+  <type>varchar(255)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>depth</name> 
+  <label>depth</label> 
+  <type>int(10)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>position</name> 
+  <label>position</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>color</name> 
+  <label>color</label> 
+  <type>varchar(32)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>timestp_unpublished</name> 
+  <label>timestp_unpublished</label> 
+  <type>bigint(14) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>posx</name> 
+  <label>posx</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>posy</name> 
+  <label>posy</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>visible</name> 
+  <label>visible</label> 
+  <type>tinyint(1)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>linkedpage</name> 
+  <label>linkedpage</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>url</name> 
+  <label>url</label> 
+  <type>varchar(255)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>url_window</name> 
+  <label>url_window</label> 
+  <type>tinyint(1)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>free1</name> 
+  <label>free1</label> 
+  <type>varchar(255)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>free2</name> 
+  <label>free2</label> 
+  <type>varchar(255)</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_wce_heading</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>  
+
+</dims_mb_field>
+</dims>

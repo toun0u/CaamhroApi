@@ -1,0 +1,279 @@
+@include r(large) {
+
+	.right-desk {
+		margin-top: .7em;
+		float: right;
+	}
+
+	.wrap-main {
+		margin-left: 20px;
+	}
+
+	#onglets + .wrap-main {
+		margin-left: 204px;
+	}
+
+	.menu-wrapper {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+		background: transparent;
+	}
+
+	.wrap {
+		margin-right: 20px;
+		margin-left: 2px;
+	}
+
+	.menu-wrapper .menu a { font-size: 1em; }
+
+	.sub-menu {
+
+		li {
+			float: none;
+			border-bottom: 1px dashed gray;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		a {
+			min-width: 200px;
+			color: #444!important;
+		}
+	}
+
+	// Fleche menu déroulant header
+	.has-subnav:after{
+		position: relative;
+		top: -2.1em;
+		left: .1em;
+		float: right;
+		content: "\25BE";
+	}
+
+	.second-nav { z-index: 5!important;  margin-left: 0!important; }
+
+	// Sous menu
+	#dashmenu {
+
+		text-transform: none;
+
+		.current-menu-item {
+			background-color: transparent;
+			font-weight: bold;
+			border-bottom: 2px solid $main-color;
+
+			 &:after {
+				top: 100%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(255, 255, 255, 0);
+				border-top-color: $main-color;
+				border-width: 5px;
+				left: 50%;
+				margin-left: -5px;
+			}
+		}
+
+		li {
+			padding: 0;
+			padding-bottom: 2px!important;
+			margin-right: 2.1em;
+		}
+
+		a { padding: 0; margin: 0; }
+
+		.has-subnav:after{
+			position: relative;
+			top: -1.45em;
+			left: .85em;
+			float: right;
+			content: "\25BE";
+		}
+
+		.sub-menu {
+
+			margin-top: -1px;
+
+			li {
+				margin: 0 !important;
+				padding: 0!important;
+				background-color: darken(#f2f2f2, 5%);
+
+			}
+			a {
+				padding: 5px;
+				color: $txt-color!important;
+				@include text-shadow(none);
+
+				&:hover {
+					color: #FFF!important;
+					background-color: $main-color;
+				}
+			}
+		}
+
+
+	}
+
+	.tabs-pure {
+
+		width: 180px;
+		margin-top: 2.3em;
+		margin-left: 2em;
+
+		a { font-size: .8em }
+
+		.item {
+			margin-bottom: .2em;
+			background: darken(#f2f2f2, 3%);
+			border-left: 1px solid silver;
+			border-top: 1px solid silver;
+			border-bottom: 1px solid silver;
+			@include border-radius(5px 0 0 5px);
+
+			@include transition-property(all);
+			@include transition-duration(150ms);
+			@include transition-delay(50ms);
+
+			&:hover {
+				background-color: #f2f2f2;
+			}
+
+			.close-item-tab {
+				float: left;
+				margin-top: 1px;
+				font-size: 0.9em;
+
+				a {
+					color: lighten($txt-color, 50%);
+					@include transition-property(all);
+					@include transition-duration(200ms);
+					@include transition-delay(50ms);
+
+					&:hover {
+						padding-left: 5px;
+						background-color: transparent;
+						color: lighten(#444, 10%)!important;
+					}
+				}
+			}
+
+			span { position: relative; top: 4px; color: $main-color; }
+
+			a {
+				padding: 5px;
+				display: block;
+				color: $txt-color;
+				text-decoration: none;
+				font-size: 0.9em;
+				@include transition-property(all);
+				@include transition-duration(300ms);
+				@include transition-delay(50ms);
+
+				&:hover {
+					padding-left: 10px;
+					background-color: #fff;
+				}
+			}
+
+			&.tab-active {
+				position: relative;
+				z-index: 10;
+				color: $txt-color;
+				background-color: #FFF;
+
+				.close-item-tab a {
+					color: #444;
+
+					&:hover { color: $main-color!important; }
+				}
+
+				a { color: #fff; font-weight: bold; }
+			}
+
+
+		}
+	}
+
+	.sidebar + .main {
+		margin-right: 250px;
+		border-right: 2px solid #d7d7d7;
+	}
+
+	.main {
+		padding-right: 20px;
+	}
+
+	.sidebar {
+		width: 260px;
+	}
+
+	a + a[data-tabable=true] {
+		margin-left: 10px;
+	}
+
+	a[data-tabable=true]{
+
+		position: relative;
+		margin-right: 20px;
+
+		&:after {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: -14px;
+			content: " ";
+		}
+
+		&:hover:after {
+			font-family: "Ico";
+			content: "\e01c";
+			color: lighten(#444, 30%);
+		}
+	}
+
+	@media only screen and (max-width: 1100px) {
+		#submenu a {
+			font-size: .9em!important;
+		}
+	}
+
+	@media only screen and (max-width: 1450px) {
+		.tabs-pure {
+			width: 140px;
+		}
+
+		#onglets + .wrap-main {
+			margin-left: 164px;
+		}
+
+		.group-spec {
+			input[type=text],
+			input[type=search] {
+				width: 78%;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 1900px) {
+		// Fleche menu déroulant header
+		.has-subnav:after{
+			top: -25px;
+		}
+
+		#dashboard {
+			// Fleche menu déroulant header
+			.has-subnav:after{
+				top: 0;
+			}
+		}
+	}
+
+}

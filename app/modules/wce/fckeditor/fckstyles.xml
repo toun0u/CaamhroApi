@@ -1,0 +1,54 @@
+<Styles>
+	<Style name="actuvert" element="h1">
+		<Attribute name="class" value="titre" />
+	</Style>
+	<Style name="actuorange" element="h1">
+		<Attribute name="class" value="titre2" />
+	</Style>
+	<Style name="Titre chapeau" element="h1">
+		<Attribute name="class" value="titre3" />
+	</Style>
+	<Style name="Sous-titre vert" element="h2">
+		<Attribute name="class" value="soustitre" />
+	</Style>
+	<Style name="Sous-titre gris" element="h3">
+		<Attribute name="class" value="soustitre2" />
+	</Style>
+	<Style name="Titre paragraphe" element="h4">
+		<Attribute name="class" value="titreparag" />
+	</Style>
+	<Style name="Paragraphe standard" element="p">
+		<Attribute name="class" value="texte" />
+	</Style>
+	<Style name="Paragraphe standard" element="p">
+		<Attribute name="class" value="texte" />
+	</Style>
+	<Style name="texte standard vert" element="font">
+		<Attribute name="class" value="texte2" />
+	</Style>
+	<Style name="Texte gras vert" element="font">
+		<Attribute name="class" value="textegras" />
+	</Style>
+	<Style name="Texte gras gris" element="font">
+		<Attribute name="class" value="textegras2" />
+	</Style>
+	<Style name="Commentaire" element="font">
+		<Attribute name="class" value="textecomment" />
+	</Style>
+	<Style name="Lien" element="font">
+		<Attribute name="class" value="lien" />
+	</Style>
+	<Style name="Puce tiret vert" element="p">
+		<Attribute name="class" value="puce_tiret_vert" />
+	</Style>
+	<Style name="Puce tiret gris" element="p">
+		<Attribute name="class" value="puce_tiret_gris" />
+	</Style>
+	<Style name="Puce tiret vert x-small" element="p">
+		<Attribute name="class" value="puce_tiret_vert_N" />
+	</Style>
+	<Style name="Puce tiret gris x-small" element="p">
+		<Attribute name="class" value="puce_tiret_gris_N" />
+	</Style>	
+
+</Styles>

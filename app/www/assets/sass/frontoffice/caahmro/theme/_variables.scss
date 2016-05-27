@@ -1,0 +1,175 @@
+/* *************************************** */
+/*										                     */
+/* Global configuration of core folder:    */
+/* Contain variables and mixins: ;		     */
+/*										                     */
+/* *************************************** */
+
+
+/* ==reset */
+/* Following variables are in core/_reset.scss */
+/* ------------------------------------------- */
+
+$txt-color: #0ED5F3;							                // Font color for body
+$bg-color : #f2f2f2;							              // Background color for body
+$fs       : 14px;  							              // Font size for body (will be converted in rem unit by rem() mixin) 
+$ff       : helvetica, arial, sans-serif;     // Font family for body
+$lh       : 1.5;							                // Line Height for body
+
+
+// Font size for hx balise
+// All size will be converted in rem unit by rem() mixin
+// The rem() mixin is in core/helpers.scss
+$h1: 28px;
+$h2: 24px;
+$h3: 22px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
+
+// alternate font-sizing
+$smaller: 10px;
+$small  : 12px;
+$medium : 14px;
+$big    : 16px;
+$bigger : 18px;
+$biggest: 20px;
+$enormous: 4em;
+
+/* ==breakpoints */
+/* Following variables are in the end of this file  */
+/* ------------------------------------------------ */
+
+// Per default we've 3 breakpoints
+// They define where begin each display (desktop, tablet and phone)
+$bp-desktop: 1024px;	// Min width
+$bp-tablet : 1023px;  // Max width
+$bp-phone  : 640px;   // Max width
+$bp-btable : 641px;
+
+
+
+/* ==table */
+/* Following variables are in core/_table.scss */
+/* ------------------------------------------- */
+
+$border: 1px solid #ccc; // Default border style
+
+
+/* ==grid */
+/* Following variables are in core/_grid.scss  */
+/* ------------------------------------------- */
+
+$gutter: 2%; // Space between block with .grid* class, be careful, $gutter must be <= 2
+
+
+
+/* ==form */
+/* Following variables are in core/_form.scss */
+/* ------------------------------------------ */
+
+$btn-radius: 5px;
+
+$btn-default-bgcolor : #0982C1;
+$btn-default-txtcolor: #fff;
+
+$btn-disable-bgcolor : darken(#fff, 5%);
+$btn-disable-txtcolor: darken(#fff, 35%);
+
+$btn-primary-bgcolor : #0982C1; // Blue
+$btn-primary-txtcolor: #fff;
+
+$btn-warning-bgcolor : #F9CC1C;	// Yellow
+$btn-warning-txtcolor: #000;
+
+$btn-error-bgcolor   : #e84242; // Red
+$btn-error-txtcolor  : #fff;
+
+$btn-success-bgcolor : #b4e226; // Green
+$btn-success-txtcolor: #000;
+
+
+/* ==flash */
+/* Following variables are in core/_helpers.scss */
+/* --------------------------------------------- */
+
+$flash-radius     : 5px;
+
+$flash-error-bg   : #e84242; // Red
+$flash-error-txt  : #fff;
+
+$flash-success-bg : #90d608; // Green
+$flash-success-txt: #fff;
+
+$flash-info-bg    : #01B0F0; // Blue
+$flash-info-txt   : #fff;
+
+$flash-warning-bg : #F9CC1C; // Yellow
+$flash-warning-txt: #000;
+
+
+/* ------------------------------------------ */
+/* Your others variables: 		 		      */
+/* ------------------------------------------ */
+
+
+// Here
+
+
+/* ------------------------------------------ */
+
+
+
+/* ==mixins */
+/* ------------------------------------------- */
+
+/* Defines the breakpoints for each display */
+@mixin r($breakpoint) {
+  @if $breakpoint == "large"  {
+    @media (min-width: $bp-desktop) { @content; } 
+  }
+  @if $breakpoint == "medium" {
+    @media (min-width: 641px) and (max-width: $bp-tablet)  { @content; }
+  }
+  @if $breakpoint == "small"  {
+    @media (max-width: $bp-phone)  { @content; }
+  }
+}
+
+
+
+/**
+ * Mixin handling REM with PX fallback
+ * Takes either PX or REM as input
+ * Outputs both in appropriate order
+ */
+@mixin rem($property, $values) {
+  $px : (); 
+  $rem: ();
+  
+  @each $value in $values { 
+   
+    @if $value == 0 or $value == auto { 
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+    
+    @else { 
+      $unit: unit($value);
+      $val: $value / ($value * 0 + 1);
+      
+      @if $unit == "px" { 
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+      
+      @if $unit == "rem" {
+        $px : append($px,  ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+  
+  #{$property}: $px;
+  #{$property}: $rem; 
+}

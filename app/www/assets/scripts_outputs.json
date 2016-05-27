@@ -1,0 +1,83 @@
+{
+   "default":{
+
+	  "includes":[
+		"common/jquery/",
+		"common/jqueryui/",
+		"common/portal_v5.js"
+	  ],
+
+	  "excludes":[
+	  ],
+
+	  "includes_backoffice" : [
+		 "common/chosen/chosen.jquery.js",
+		 "common/dims_validForm.js",
+		 "common/dims_chat.js",
+		 "common/jqueryui/jqueryui1-10-3.min.js",
+		 "common/jquery.dataTables.min.js",
+		 "common/jquery.dataTables.min.js",
+		 "common/jquery.hoverIntent.minified.js",
+		 "common/jcarousel/lib/jquery.jcarousel.min.js",
+		 "common/dims_constantizer/constantizer.js",
+		 "common/fullcalendar/fullcalendar.min.js",
+		 "common/jquery.imgareaselect.min.js",
+		 "common/jquery.zclip.min.js",
+		 "common/base64.js",
+		 "common/colorpicker/js/colorpicker.js",
+		 "common/ckeditor/ckeditor.js",
+		 "common/dims_autocomplete.js",
+		 "libs/closure-library/closure/goog/base.js",
+		 "common/jquery.tmpl.min.js",
+		 "common/select2-3.5.1/select2.js"
+	  ],
+
+	  "includes_frontoffice" : [
+		 "frontoffice/caahmro/catalogue.js",
+		 "frontoffice/caahmro/datepicker-fr.js",
+		 "common/jquery.colorbox-min.js"
+	  ],
+
+	  "exceptions":{
+
+		 "frontoffice":{
+
+			"desktopV3":{
+			   "includes" : [
+
+				  "common/RGraph/libraries"
+			   ],
+
+			   "excludes" : [
+
+				  "common/RGraph/libraries"
+			   ]
+			},
+			"default":{
+				"excludes":[
+					"frontoffice/default/ckstyles.js"
+				]
+			}
+
+		 },
+
+		 "backoffice":{
+
+			"excludes" : [
+			   "backoffice/desktopV3/test.js"
+			]
+
+		 }
+	  }
+   },
+   "wce":{
+		"includes" : [],
+		"excludes":[
+			"../../modules/wce/ckeditor",
+			"../../modules/wce/fckeditor",
+			"modules/wce/ckeditor",
+			"modules/wce/fckeditor"
+		],
+		"fixs": []
+	}
+}

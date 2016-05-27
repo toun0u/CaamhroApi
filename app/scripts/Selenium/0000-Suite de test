@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="000-Déconnexion">000-Déconnexion</a></td></tr>
+<tr><td><a href="001-Connexion">001-Connexion</a></td></tr>
+<tr><td><a href="002-Administration système">002-Administration système</a></td></tr>
+<tr><td><a href="003-Administration workspace">003-Administration workspace</a></td></tr>
+<tr><td><a href="004-doc-creation de dossier">004-doc-creation de dossier</a></td></tr>
+<tr><td><a href="005-doc-Enregistrement de fichier hosts">005-doc-Enregistrement de fichier hosts</a></td></tr>
+<tr><td><a href="006-doc-suppression fichier hosts">006-doc-suppression fichier hosts</a></td></tr>
+<tr><td><a href="007-doc-suppresion de dossier">007-doc-suppresion de dossier</a></td></tr>
+<tr><td><a href="008-crm-Création contact">008-crm-Création contact</a></td></tr>
+<tr><td><a href="009-crm-recherche contact">009-crm-recherche contact</a></td></tr>
+<tr><td><a href="010-crm-creation entreprise">010-crm-creation entreprise</a></td></tr>
+<tr><td><a href="011-crm-recherche entreprise">011-crm-recherche entreprise</a></td></tr>
+<tr><td><a href="012-indexation">012-indexation</a></td></tr>
+<tr><td><a href="013-Recherche globale-contact">013-Recherche globale-contact</a></td></tr>
+<tr><td><a href="014-Recherche globale-entreprise">014-Recherche globale-entreprise</a></td></tr>
+<tr><td><a href="015-Suppression de contact">015-Suppression de contact</a></td></tr>
+<tr><td><a href="016-Suppression entreprise">016-Suppression d'entreprise</a></td></tr>
+<tr><td><a href="017-form-creation formulaire">017-form-creation d'un formulaire</a></td></tr>
+<tr><td><a href="018-form-creation champ">018-form-creation d'un champ</a></td></tr>
+<tr><td><a href="019-form-remplissage formulaire">019-form-remplissage d'un formulaire</a></td></tr>
+<tr><td><a href="020-form-suppresion formulaire">020-form-suppresion formulaire</a></td></tr>
+<tr><td><a href="021-wce-Creation de sous rubrique">021-wce-Creation de sous rubrique</a></td></tr>
+<tr><td><a href="022-wce-Création article">022-wce-Création d'un article</a></td></tr>
+<tr><td><a href="023-wce-creation de bloc">023-wce-creation de bloc</a></td></tr>
+<tr><td><a href="024-wce-suppression article">024-wce-suppression article</a></td></tr>
+<tr><td><a href="025-wce-Suppression rubrique">025-wce-Suppression d'une rubrique</a></td></tr>
+</tbody></table>
+</body>
+</html>

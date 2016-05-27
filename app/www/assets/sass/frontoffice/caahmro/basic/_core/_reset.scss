@@ -1,0 +1,262 @@
+/* ----------------------------- */
+/* ==reset */
+/* ----------------------------- */
+
+/**
+ * 1. Base font-size (corresponds to 10px) adapted to REM unit 
+ * 2. Orientation iOS font-size fix
+ */
+html {
+	font-size: 62.5%; /* 1 */
+	@media (orientation: landscape) and (max-device-width: 768px) {
+		-webkit-text-size-adjust: 100%; /* 2 */
+	}
+}
+
+body {
+	background-color: $bg-color;
+	color: $txt-color;
+	font-family: $ff;
+	@include rem('font-size', $fs);
+	line-height: $lh;
+}
+
+/**
+ * Font-sizing for content
+ * Preserves vertical-rythm
+ * Source: http://soqr.fr/vertical-rhythm/ 
+ */
+p, ul, ol, dl,
+blockquote, pre,
+td, th,
+label, textarea,
+caption, details, figure, hgroup {
+	@include rem('font-size', $fs);
+	line-height: $lh;
+	margin: .75em 0 0;
+}
+
+h1, .h1-like,
+h2, .h2-like,
+h3, .h3-like,
+h4, .h4-like,
+h5, .h5-like,
+h6, .h6-like {
+	font-weight: normal;
+	@include rem('margin', 21px 0 0 0);
+}
+
+h1, .h1-like, 
+h2, .h2-like,
+h3, .h3-like {
+	@include rem('line-height', 42px 0 0 0);
+}
+
+h4, .h4-like,
+h5, .h5-like,
+h6, .h6-like {
+	@include rem('line-height', 21px 0 0 0);
+}
+
+h1, .h1-like { @include rem('font-size', $h1); }
+h2, .h2-like { @include rem('font-size', $h2); }
+h3, .h3-like { @include rem('font-size', $h3); }
+h4, .h4-like { @include rem('font-size', $h4); }
+h5, .h5-like { @include rem('font-size', $h5); }
+h6, .h6-like { @include rem('font-size', $h6); }
+
+/* alternate font-sizing */
+.smaller	 { @include rem('font-size', $smaller); }
+.small   	 { @include rem('font-size', $small); }
+.medium 	 { @include rem('font-size', $medium); }
+.big     	 { @include rem('font-size', $big); }
+.bigger  	 { @include rem('font-size', $bigger); }
+.biggest 	 { @include rem('font-size', $biggest); }
+
+h2.titleh2_orange{
+	color: #FF6100;
+}
+// Taille fixe
+
+.width70{ width:70px;}
+
+/**
+ * Soft reset 
+ */
+html, body,
+textarea,
+figure, label {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	padding-left: 0px;
+
+	&.unstyled {
+		list-style: none;
+	}
+}
+
+code, pre,
+samp, kbd {
+	white-space: pre-wrap;
+	font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+	line-height: 1em;
+}
+
+code, kbd, mark { 
+	border-radius: 2px; 
+}
+
+em { 
+	font-style: italic; 
+}
+
+strong { 
+	font-weight: bold; 
+}
+
+kbd {
+	padding: 0 2px;
+	border: 1px solid #999;
+}
+
+code {
+	padding: 2px 4px;
+	background: rgba(0,0,0,.04);
+	color: #b11; 
+}
+
+mark {
+	padding:2px 4px;
+	background: #ff0;
+}
+
+table { 
+	margin-bottom: 1.5em; 
+}
+
+.round10{
+	border-radius: 10px;
+}
+
+.round5{
+	border-radius: 5px;
+}
+
+.nopbottom{
+	padding-bottom: 0px !important;
+}
+
+.nombottom{
+	margin-bottom: 0px !important;
+}
+
+.noptop{
+	padding-top: 0px !important;
+}
+
+.nomtop{
+	margin-top: 0px !important;
+}
+
+.wordbnormal{
+	word-break: normal !important;
+}
+
+.fondbuttonnoir{
+	background-color: #5A5B61 !important;
+	color: white !important;
+}
+
+.underline{
+	text-decoration: underline !important;
+}
+
+.blue{
+	color: #3190CF !important;
+}
+
+.orange{
+	color: rgb(255, 97, 0) !important;
+}
+
+/**
+ * Avoid top margins on first content element 
+ */
+p, ul, ol dl,
+blockquote, pre,
+h1, h2, h3, h4, h5, h6 {
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+/**
+ * Avoid margins on nested elements 
+ */
+li {
+	p, ul, ol {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+/**
+ * Prevents those to break out of their container
+ */
+img, table, td, 
+blockquote, code, pre, 
+textarea, input, video {
+	max-width: 100%;
+}
+
+/**
+ * You shall not pass 
+ */
+div, textarea, 
+table, td, th, 
+code, pre, samp {
+	word-wrap: break-word;
+	@include hyphens(auto);
+}
+
+/**
+ * Pictures 
+ */
+img {
+	height: auto;
+	vertical-align: middle;
+
+	/* Gmap3 max-width bug fix on images */
+	#map_canvas &,
+	.gmnoprint & {
+		max-width: none;
+	}
+
+	a & {
+		border: 0;
+	}
+}
+
+/* scripts */
+body > script { display: none !important; }
+
+/* skip-links */
+.skip-links {
+	position: absolute;
+
+	a {
+		position: absolute;
+		left: -7000px;
+		padding: 0.5em;
+		background: #000;
+		color:#fff;
+		text-decoration: none;
+
+		&:focus {
+			position: static;
+		}
+	}
+}

@@ -1,0 +1,175 @@
+input,
+textarea{
+    color: #424242;
+}
+
+input#ct_lastname,
+input#ct_firstname{
+    border: 1px solid #DEDEDE;
+}
+
+/* Connexion */
+
+div.bloc_fond_connexion{
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin-left: 25%;
+    overflow: hidden;
+    padding: 5px;
+    width: 50%;
+	color: white;
+}
+
+div.border_bloc_fond_connexion{
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+div.border_bloc_fond_connexion p{
+	color: #757575;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+div.validation{
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+div.validation input{
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+	color: #757575;
+}
+
+input#dims_login,
+input#dims_password{
+	border: 1px solid #dedede;
+}
+
+input#dims_password{
+
+}
+
+/* @header */
+
+a,
+span{
+	color: #424242;
+	outline: none;
+}
+
+#sharefile .header {
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+#sharefile .separateur {
+	background: url('/modules/sharefile/img/separateur.png') top center repeat-x;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+	clear: left;
+	padding-bottom: 20px;
+}
+
+#sharefile .header .elem {
+	float: left;
+	width: auto;
+	margin: auto;
+	overflow: hidden;
+	height: auto;
+	width: 50%;
+	text-align: center;
+}
+
+#sharefile .header .elem span{
+	float:left;
+	line-height: 63px;
+	font-size: 18px;
+	color: #424242;
+	margin-left: 10px;
+}
+
+#sharefile .header .elem a {
+}
+
+#sharefile .header .elem a img {
+	float:left;
+}
+/* end@header */
+
+/* @content */
+#sharefile .content {
+	float: none;
+	width: 100%;
+	padding: 0px;
+}
+
+table.filtre_partage td{
+	padding: 3px;
+	margin-right: 5px;
+}
+
+#lst_tempuser li{
+    line-height: 27px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+	border-bottom: 1px solid #dedede;
+}
+
+ul#lst_tmpcontact{
+	padding: 0px;
+}
+
+input#nomsearch{
+	border: 1px solid #dedede;
+}
+
+#shareblock1{
+    background: url("/modules/sharefile/img/separateur2.png") repeat-y scroll right top transparent;
+    clear: both;
+    float: left;
+    padding-right: 30px;
+    padding-top: 5px;
+    width: 47%;
+}
+
+#shareblock2{
+	padding-top: 5px;
+	float: left;
+	padding-left: 20px;
+	width: 47%;
+}
+
+ul#lst_contact{
+	overflow: hidden;
+	padding: 0px;
+}
+
+ul#lst_contact li{
+	overflow: hidden;
+	background-color: #f1f1f1;
+	width: 100%;
+	padding: 10px;
+	float: left;
+	width: 96%;
+	list-style-type: none;
+	margin-bottom: 10px;
+	border-radius:5px;
+}
+
+ul#lst_contact li div img{
+	float: left;
+	margin-right: 10px;
+}
+/* end@content */

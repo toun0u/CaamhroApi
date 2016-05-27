@@ -1,0 +1,23 @@
+AcceptPathInfo Off
+Options -Indexes -MultiViews
+
+<ifmodule mod_headers.c>
+	Header set Content-Type "application/json"
+	Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+	Header set Pragma "no-cache"
+	Header set Expires "Sun, 20 Apr 2014 04:20:00 GMT"
+	Header unset ETag
+	FileETag none
+
+	Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE"
+</ifmodule>
+<ifmodule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault A0
+</ifmodule>
+<ifmodule mod_rewrite.c>
+	RewriteEngine 	on
+	RewriteBase 	/
+	RewriteCond 	%{REQUEST_FILENAME} !-f
+	RewriteRule 	^ index.php [QSA,L]
+</ifmodule>

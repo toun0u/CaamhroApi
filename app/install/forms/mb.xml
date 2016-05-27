@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<dims>
+<dims_mb_wce_object>
+	<row>
+		<label>Affichage Formulaire</label>
+		<script>?op='display'</script>
+		<select_id>id</select_id>
+		<select_label>label</select_label>
+		<select_table>dims_mod_forms</select_table>
+	</row>
+</dims_mb_wce_object>
+<dims_mb_table>
+<row>
+  <name>dims_mod_forms</name> 
+  <label>forms</label> 
+  <visible>1</visible> 
+</row>
+<row>
+  <name>dims_mod_forms_field</name> 
+  <label>field</label> 
+  <visible>1</visible> 
+</row>
+<row>
+  <name>dims_mod_forms_reply</name> 
+  <label>reply</label> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <name>dims_mod_forms_reply_field</name> 
+  <label>reply_field</label> 
+  <visible>1</visible> 
+  </row>
+</dims_mb_table>
+<dims_mb_field>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  <id_object>1</id_object> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>label</name> 
+  <label>label</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>tablename</name> 
+  <label>tablename</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>description</name> 
+  <label>description</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>pubdate_start</name> 
+  <label>pubdate_start</label> 
+  <type>varchar(14)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>pubdate_end</name> 
+  <label>pubdate_end</label> 
+  <type>varchar(14)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>email</name> 
+  <label>email</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_onlyone</name> 
+  <label>option_onlyone</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_onlyoneday</name> 
+  <label>option_onlyoneday</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>width</name> 
+  <label>width</label> 
+  <type>varchar(5)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>nbline</name> 
+  <label>nbline</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>model</name> 
+  <label>model</label> 
+  <type>varchar(32)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>typeform</name> 
+  <label>typeform</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_modify</name> 
+  <label>option_modify</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_view</name> 
+  <label>option_view</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_displayuser</name> 
+  <label>option_displayuser</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_displaygroup</name> 
+  <label>option_displaygroup</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_displaydate</name> 
+  <label>option_displaydate</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>option_displayip</name> 
+  <label>option_displayip</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>viewed</name> 
+  <label>viewed</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>autobackup</name> 
+  <label>autobackup</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>cms_response</name> 
+  <label>cms_response</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>cms_link</name> 
+  <label>cms_link</label> 
+  <type>tinyint(1)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10)</type> 
+  <visible>1</visible> 
+</row>
+
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>id_forms</name> 
+  <label>id_forms</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>name</name> 
+  <label>name</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>type</name> 
+  <label>type</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>format</name> 
+  <label>format</label> 
+  <type>varchar(16)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>values</name> 
+  <label>values</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>description</name> 
+  <label>description</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>position</name> 
+  <label>position</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>maxlength</name> 
+  <label>maxlength</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_needed</name> 
+  <label>option_needed</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_arrayview</name> 
+  <label>option_arrayview</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_exportview</name> 
+  <label>option_exportview</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_cmsgroupby</name> 
+  <label>option_cmsgroupby</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_cmsorderby</name> 
+  <label>option_cmsorderby</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_cmsdisplaylabel</name> 
+  <label>option_cmsdisplaylabel</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>option_cmsshowfilter</name> 
+  <label>option_cmsshowfilter</label> 
+  <type>tinyint(1) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_field</tablename> 
+  <name>defaultvalue</name> 
+  <label>defaultvalue</label> 
+  <type>varchar(255)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>id_forms</name> 
+  <label>id_forms</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>tinyint(3) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>date_validation</name> 
+  <label>date_validation</label> 
+  <type>varchar(14)</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply</tablename> 
+  <name>ip</name> 
+  <label>ip</label> 
+  <type>varchar(15)</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id</name> 
+  <label>id</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible>
+  <id_object>2</id_object>  
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_reply</name> 
+  <label>id_reply</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible>
+ </row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_forms</name> 
+  <label>id_forms</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+  </row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_field</name> 
+  <label>id_field</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>value</name> 
+  <label>value</label> 
+  <type>longtext</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_user</name> 
+  <label>id_user</label> 
+  <type>int(10) unsigned</type> 
+  <visible>1</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_workspace</name> 
+  <label>id_workspace</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+<row>
+  <tablename>dims_mod_forms_reply_field</tablename> 
+  <name>id_module</name> 
+  <label>id_module</label> 
+  <type>int(10) unsigned</type> 
+  <visible>0</visible> 
+</row>
+</dims_mb_field>
+<dims_mb_schema>
+<row>
+  <tablesrc>dims_mod_forms_field</tablesrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <tabledest>dims_user</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <tabledest>dims_group</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <tabledest>dims_module</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <tabledest>dims_mod_forms_reply</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <tabledest>dims_mod_forms_field</tabledest> 
+  </row>
+  </dims_mb_schema>
+<dims_mb_relation>
+<row>
+  <tablesrc>dims_mod_forms_field</tablesrc> 
+  <fieldsrc>id_forms</fieldsrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <fieldsrc>id_forms</fieldsrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <fieldsrc>id_user</fieldsrc> 
+  <tabledest>dims_user</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <fieldsrc>id_group</fieldsrc> 
+  <tabledest>dims_group</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply</tablesrc> 
+  <fieldsrc>id_module</fieldsrc> 
+  <tabledest>dims_module</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <fieldsrc>id_reply</fieldsrc> 
+  <tabledest>dims_mod_forms_reply</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <fieldsrc>id_forms</fieldsrc> 
+  <tabledest>dims_mod_forms</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+<row>
+  <tablesrc>dims_mod_forms_reply_field</tablesrc> 
+  <fieldsrc>id_field</fieldsrc> 
+  <tabledest>dims_mod_forms_field</tabledest> 
+  <fielddest>id</fielddest> 
+  </row>
+  </dims_mb_relation>
+</dims>

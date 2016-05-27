@@ -1,0 +1,35 @@
+div.link_file{
+	width: 100%;
+	overflow: hidden;
+}
+
+div.link_file > div{
+	float: left;
+	line-height: 16px;
+}
+
+div.link_file div.actions{
+	margin-left: 5px;
+}
+a.fil_button{
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+a.loupe {
+	background: transparent url(./loupe_grise.png) no-repeat top left;
+}
+a.download {
+	background: transparent url(./download_gris.png) no-repeat top left;
+}
+
+
+a.loupe:hover {
+	background: transparent url(./loupe_noire.png) no-repeat top left;
+}
+a.download:hover {
+	background: transparent url(./download_noir.png) no-repeat top left;
+}

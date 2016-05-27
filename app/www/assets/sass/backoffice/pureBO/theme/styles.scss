@@ -1,0 +1,14 @@
+@import "compass/css3"; // Import compass
+@import "../_basic/_basic.scss";
+
+$main-color: #5ab247;
+
+@import "fonts.scss";
+@import "global.scss";
+@import "form.scss";
+
+@import "phone.scss";
+@import "desk.scss";
+
+@import "ie.scss";
+@import "external-fixs.scss";

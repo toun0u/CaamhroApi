@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : messageStructure.xml
+    Created on : 29 juin 2010, 09:20
+    Author     : nico
+    Description:
+        Structure of the following types of XML messages
+
+    Description des attributs :
+
+	- ref : définit si un attribut désigne une récursion sur une partie du corps
+
+	- recur : définit le nombre de fois que l'on peut trouver un bloc d'attributs
+		 + : Au moins une fois
+		 * : 0 ou plusieurs fois
+		 1 : Une seule et unique fois
+		 - : 0 ou 1 fois
+
+Exemple de message :
+
+<ConnectionRequest>
+	<from>Dims1</from>
+	<to>Jabber</to>
+	<dims>
+		<login>Dims1</login>
+		<pwd>dims</pwd>
+	</dims>
+</ConnectionRequest>
+
+Last Modification : 2010-08-25 18:31:10
+Version Number : 1.41
+-->
+<messages>
+  <message>
+    <Designation>ConnectionRequest</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">dims</Intitule>
+      <Attribut type="string" recur="1">login</Attribut>
+      <Attribut type="string" recur="1">pwd</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Download</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">fichier</Intitule>
+      <Attribut type="int" recur="1">id_fichier</Attribut>
+      <Attribut type="string" recur="1">name</Attribut>
+      <Attribut type="string" recur="1">URL</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Document</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="*">document</Intitule>
+      <Attribut type="int" recur="1">ID</Attribut>
+      <Attribut type="string" recur="1">name</Attribut>
+      <Attribut type="date" recur="-">date</Attribut>
+      <Attribut type="string" recur="-">firstname</Attribut>
+      <Attribut type="string" recur="-">lastname</Attribut>
+      <Attribut type="string" recur="-">extension</Attribut>
+      <Attribut type="int" recur="1">ID_workspace</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>ModuleWorkspace</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="-">moduleworkspace</Intitule>
+      <Attribut type="string" recur="1">dimsID</Attribut>
+      <Attribut>
+        <Intitule recur="*">workspace</Intitule>
+        <Attribut type="int" recur="1">idWorkspace</Attribut>
+        <Attribut type="string" recur="1">designationWorkspace</Attribut>
+        <Attribut>
+          <Intitule recur="*">module</Intitule>
+          <Attribut type="int" recur="1">idModule</Attribut>
+	  <Attribut type="string" recur="1">designationModule</Attribut>
+          <Attribut type="int" recur="1">idTypeModule</Attribut>
+	  <Attribut type="string" recur="1">designationTypeModule</Attribut>
+        </Attribut>
+      </Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestDocument</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="-">body</Intitule>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Version</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">version</Intitule>
+      <Attribut type="int" recur="1">numero_version</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestFicXMLStructure</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">body</Intitule>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestContact</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">body</Intitule>
+      <Attribut type="string" recur="1">jabberID</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestModuleWorkspace</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">body</Intitule>
+      <Attribut type="string" recur="1">jabberID</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Arborescence</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="*">repertoire</Intitule>
+      <Attribut type="string" recur="1">dimsID</Attribut>
+      <Attribut type="int" recur="1">id_module</Attribut>
+      <Attribut>
+		<Intitule  recur="*">dossier</Intitule>
+		<Attribut type="int" recur="1">id</Attribut>
+		<Attribut type="string" recur="1">nom</Attribut>
+		<Attribut type="int" recur="1">id_user</Attribut>
+		<Attribut type="int" recur="-">timestp_create</Attribut>
+		<Attribut type="int" recur="-">timestp_modify</Attribut>
+		<Attribut type="int" recur="-">id_user_modify</Attribut>
+		<Attribut type="string" recur="-">description</Attribut>
+		<Attribut type="int" recur="1">readonly</Attribut>
+		<Attribut type="string" recur="-">foldertype</Attribut>
+		<Attribut>
+			<Intitule ref="dossier" recur="*">dossier</Intitule>
+		</Attribut>
+      </Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Error</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">error</Intitule>
+      <Attribut type="int" recur="1">errorID</Attribut>
+      <Attribut type="string" recur="-">designationError</Attribut>
+      <Attribut type="int" recur="1">idSourceError</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>Contact</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="-">contact</Intitule>
+      <Attribut type="string" recur="1">jabberID</Attribut>
+      <Attribut type="string" recur="-">firstname</Attribut>
+      <Attribut type="string" recur="-">lastname</Attribut>
+      <Attribut type="string" recur="-">mobile</Attribut>
+      <Attribut type="string" recur="-">function</Attribut>
+      <Attribut type="string" recur="-">address</Attribut>
+      <Attribut type="int" recur="-">cp</Attribut>
+      <Attribut type="string" recur="-">city</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestDownload</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">body</Intitule>
+      <Attribut type="int" recur="1">ID_fichier</Attribut>
+    </Corps>
+  </message>
+  <message>
+    <Designation>RequestArborescence</Designation>
+    <Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule recur="1">body</Intitule>
+      <Attribut type="int" recur="1">id_module</Attribut>
+    </Corps>
+  </message>
+  <message>
+	<Designation>initDims</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>infosDims</Intitule>
+      <Attribut type="string">nom</Attribut>
+	  <Attribut type="string">ip</Attribut>
+	  <Attribut type="string">host</Attribut>
+	  <Attribut type="string">clefSecuriteHost</Attribut>
+    </Corps>
+  </message>
+  <message>
+	<Designation>initDimsFailed</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>infosFailure</Intitule>
+      <Attribut type="string">reason</Attribut>
+	  <Attribut type="int">codeErreur</Attribut>
+    </Corps>
+</message>
+<message>
+	<Designation>initDimsSucceed</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>confirmationInfosDims</Intitule>
+      <Attribut type="string">name</Attribut>
+	  <Attribut type="string">clefSecurite</Attribut>
+    </Corps>
+</message>
+<message>
+	<Designation>initDimsContact</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+	  <Intitule>listeInfosContact</Intitule>
+		  <Attribut type="string">clefSecurite</Attribut>
+		  <Attribut>
+			<Intitule recur="*">infosContact</Intitule>
+		    <Attribut type="int">idUser</Attribut>
+		    <Attribut type="string">jabberId</Attribut>
+		    <Attribut type="string">login</Attribut>
+		    <Attribut type="string">password</Attribut>
+		    <Attribut type="string">firstname</Attribut>
+		    <Attribut type="string">lastname</Attribut>
+		    <Attribut type="string" recur="-">email</Attribut>
+		    <Attribut type="int" recur="*">lienContact</Attribut>
+		  </Attribut>  
+    </Corps>
+</message>
+<message>
+	<Designation>addDimsContact</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>infosContact</Intitule>
+	  <Attribut type="int">idUser</Attribut>
+	  <Attribut type="string">jabberId</Attribut>
+      <Attribut type="string">login</Attribut>
+	  <Attribut type="string">password</Attribut>
+	  <Attribut type="string">firstname</Attribut>
+	  <Attribut type="string">lastname</Attribut>
+	  <Attribut type="string" recur="-">email</Attribut>
+	  <Attribut type="int" recur="*">lienContact</Attribut>
+	  <Attribut type="string">clefSecurite</Attribut>
+    </Corps>
+</message>
+<message>
+<Designation>suppDimsContact</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>infosContact</Intitule>
+	  <Attribut type="int">idUser</Attribut>
+	  <Attribut type="string">clefSecurite</Attribut>
+    </Corps>
+</message>
+<message>
+	<Designation>addDimsLink</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>linkContact</Intitule>
+	  <Attribut type="int">idUser1</Attribut>
+	  <Attribut type="int" recur="*">idUser2</Attribut>
+	  <Attribut type="string">clefSecurite</Attribut>
+    </Corps>
+</message>
+<message>
+	<Designation>suppDimsLink</Designation>
+	<Expediteur>from</Expediteur>
+    <Destinataire>to</Destinataire>
+    <Corps>
+      <Intitule>linkContact</Intitule>
+	  <Attribut type="int">idUser1</Attribut>
+	  <Attribut type="int" recur="*">idUser2</Attribut>
+	  <Attribut type="string">clefSecurite</Attribut>
+    </Corps>
+</message>
+
+
+
+</messages>

@@ -1,0 +1,54 @@
+.alternate-light {
+
+	tr {
+		&:nth-child(odd) {
+			background-color: #fff!important;
+		}
+		&:nth-child(even) {
+			background-color: #f2f2f2!important;
+		}
+
+		&:last-child {
+			td { border-bottom: none; }
+		}
+
+		th,
+		td {
+			&:first-child {
+				border-right: none;
+			}
+		}
+	}
+
+	th {
+		color: $phoneheader-color;
+		background-color: transparent;
+	}
+}
+
+.alternate-light-inv {
+	tr {
+		&:nth-child(odd) {
+			background-color: #f2f2f2!important;
+		}
+		&:nth-child(even) {
+			background-color: #fff!important;
+		}
+
+		&:last-child {
+			td { border-bottom: none; }
+		}
+
+		th,
+		td {
+			&:first-child {
+				border-right: none;
+			}
+		}
+	}
+
+	th {
+		color: $phoneheader-color;
+		background-color: transparent;
+	}
+}

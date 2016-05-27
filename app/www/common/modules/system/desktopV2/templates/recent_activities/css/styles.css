@@ -1,0 +1,143 @@
+div.zone_recent_activities {
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 4px;
+    padding: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+div.details {
+	clear:both;
+}
+
+div.zone_recent_activities div.bloc_ligne{
+	float: left;
+}
+
+div.zone_recent_activities div.ro_details{
+	float:left;
+    width:75%;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #777777;
+}
+
+div.zone_recent_activities div.ro_details div.title p{
+	margin: 0px;
+}
+
+div.zone_recent_activities div.ro_details div.title p a{
+	text-decoration: none;
+	color: #df1d31;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+div.zone_recent_activities div.ro_details a:hover{
+	color: #df1d31;
+}
+
+div.zone_recent_activities div.ro_details div.title p img{
+	vertical-align: middle;
+}
+
+div.zone_recent_activities div.ro_details div.tiers{
+	margin-top: 5px;
+}
+
+div.zone_recent_activities div.ro_details div.tiers a.see_more{
+	margin-top: 8px;
+	margin-bottom: 6px;
+	color: #df1d31;
+	display: block;
+}
+div.zone_recent_activities div.ro_details div.tiers li{
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+div.zone_recent_activities div.ro_details div.tiers p{
+	margin: 0px;
+}
+
+div.zone_recent_activities div.ro_details div.tiers p img{
+	vertical-align: sub;
+}
+
+h1.h1_recent_activities {
+    border-bottom: 1px solid #D6D6D6;
+    float: left;
+    margin: 0 0 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+div.zone_recent_activities div.ro_avatar{
+    float: left;
+    width: 40px;
+}
+
+div.zone_recent_activities div.ro_avatar a{
+	text-decoration: none;
+}
+
+div.zone_recent_activities div.ro_avatar a img{
+	border: 0px;
+}
+
+table.ro_calendar {
+    float: left;
+}
+
+td.bloc_calendar {
+    display: block;
+    float: left;
+    padding: 5px;
+    width: 60px;
+}
+
+td.bloc_calendar table{
+    box-shadow: 0 2px 2px #aaa;
+}
+
+td.calendar_top {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+td.calendar_bot {
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+    color: #424242;
+    font-size: 14px;
+    padding: 5px;
+}
+
+div.zone_recent_activities div.footer{
+	font-size: 10px;
+	color: #888888;
+	font-style: italic;
+	margin-top: 2px;
+	width: 100%;
+	text-align: right;
+	float: left;
+}
+
+div.zone_recent_activities div.footer a{
+	text-decoration: none;
+	color: #888888;
+}
+
+div.zone_recent_activities div.footer a:hover{
+	color: #555555;
+}
+
+div.ro_details > div.details > div.close, div.ro_details > div.details > div.delete {
+	float: left;
+	margin-right: 5px;
+}
+
+div.ro_details > div.details > div.tiers {
+	clear: left;
+}

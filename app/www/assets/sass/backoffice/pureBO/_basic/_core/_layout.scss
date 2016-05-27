@@ -1,0 +1,180 @@
+
+/* ----------------------------- */
+/* ==layout and modules */
+/* ----------------------------- */
+
+/**
+ * Switching box-model for all elements
+ * 1. ...and pseudo-elements
+ */
+*,
+*:after, /* 1 */
+*:before {
+	@include box-sizing(border-box);
+}
+
+/**
+ * Float layout
+ * module, contains floats (.item is the same)
+ */
+.mod, .item {
+	overflow: hidden;
+}
+
+/**
+ * Blocks that needs to be placed under floats
+ */
+.clear, .line, .row {
+	clear: both;
+}
+
+/**
+ * Blocks that must contain floats
+ */
+.clearfix, .line, .mod {
+	@extend .clearfix;
+}
+
+/**
+ * Table layout
+ */
+.row {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.row > *,
+.col {
+	display: table-cell;
+	vertical-align: top;
+}
+
+/**
+ * Inline-blocks
+ */
+.inbl {
+	@include inline-block(top);
+	margin-right: -.25em;
+}
+
+.dtable {
+	display: table;
+}
+
+/**
+ * Flexbox layout
+ */
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-h {
+	-webkit-box-orient: horizontal;
+	   -moz-box-orient: horizontal;
+	-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+			flex-direction: row;
+}
+
+.flex-v {
+	-webkit-box-orient: vertical;
+	   -moz-box-orient: vertical;
+	-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
+}
+
+.flex-fluid {
+	-webkit-box-flox: 1;
+	   -moz-box-flex: 1;
+		-webkit-flex: 1;
+		   -moz-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.flex-start {
+	-webkit-box-ordinal-group: -1;
+	   -moz-box-ordinal-group:  0;
+			   -ms-flex-order: -1;
+				-webkit-order: -1;
+				   -moz-order: -1;
+						order: -1;
+}
+
+.flex-mid {
+	-webkit-box-ordinal-group:  1;
+	   -moz-box-ordinal-group:  1;
+			   -ms-flex-order:  1;
+				-webkit-order:  1;
+				   -moz-order:  1;
+						order:  1;
+}
+
+.flex-end {
+	-webkit-box-ordinal-group: 42;
+	   -moz-box-ordinal-group: 42;
+			   -ms-flex-order: 42;
+				-webkit-order: 42;
+				   -moz-order: 42;
+						order: 42;
+}
+
+/* Alignments (blocks and inline) */
+/* ------------------------------ */
+
+.left  { float: left;  }
+.right { float: right; }
+
+img.left { margin-right: 1em; }
+img.right {	margin-left: 1em; }
+
+img.left,
+img.right { margin-bottom: 5px; }
+
+.center    { margin-left: auto; margin-right: auto; }
+.txtleft   { text-align: left; }
+.txtright  { text-align: right; }
+.txtcenter { text-align: center; }
+
+/**
+ * Blocks widths
+ * (percentages and pixels)
+ */
+.w10    { width: 10%; }
+.w15    { width: 15%; }
+.w20    { width: 20%; }
+.w25    { width: 25%; }
+.w30    { width: 30%; }
+.w33    { width: 33.333%; }
+.w40    { width: 40%; }
+.w50    { width: 50%; }
+.w60    { width: 60%; }
+.w66    { width: 66.666%; }
+.w70    { width: 70%; }
+.w75    { width: 75%; }
+.w80    { width: 80%; }
+.w90    { width: 90%; }
+.w100   { width: 100%; }
+
+.mw75 { max-width: 73%;}
+
+.w50p   { width: 50px; }
+.w100p  { width: 100px; }
+.w150p  { width: 150px; }
+.w200p  { width: 200px; }
+.w250p  { width: 250px; }
+.w300p  { width: 300px; }
+.w400p  { width: 400px; }
+.w500p  { width: 500px; }
+.w600p  { width: 600px; }
+.w700p  { width: 700px; }
+.w800p  { width: 800px; }
+.w960p  { width: 960px; }
+.mw960p { max-width: 960px; }
+

@@ -1,0 +1,1 @@
+FCKLang['DlgDimsFlvTitle']		= 'Video FLV' ;

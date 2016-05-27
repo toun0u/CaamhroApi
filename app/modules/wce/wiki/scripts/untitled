@@ -1,0 +1,73 @@
+#Cyril 27/07/2012 --
+
+
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content10', 'content10', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content11', 'content11', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content12', 'content12', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content13', 'content13', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content14', 'content14', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content15', 'content15', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content16', 'content16', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content17', 'content17', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content18', 'content18', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'content19', 'content19', 'longtext', '1', '1', '1', '1');
+
+
+
+
+
+
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent1', 'draftcontent1', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent2', 'draftcontent2', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent3', 'draftcontent3', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent4', 'draftcontent4', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent5', 'draftcontent5', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent6', 'draftcontent6', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent7', 'draftcontent6', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent8', 'draftcontent8', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent9', 'draftcontent9', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent10', 'draftcontent10', 'longtext', '1', '1', '1', '1');
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES (NULL, '83', 'draftcontent11', 'draftcontent11', 'longtext', 1, 1, 1, 1),
+																														   (NULL, '83', 'draftcontent12', 'draftcontent12', 'longtext', 1, 1, 1, 1),
+																														   (NULL, '83', 'draftcontent13', 'draftcontent13', 'longtext', 1, 1, 1, 1),
+																														   (NULL, '83', 'draftcontent14', 'draftcontent14', 'longtext', 1, 1, 1, 1),  
+																														   (NULL, '83', 'draftcontent15', 'draftcontent15', 'longtext', 1, 1, 1, 1),
+																														   (NULL, '83', 'draftcontent16', 'draftcontent16', 'longtext', 1, 1, 1, 1),   
+																														   (NULL, '83', 'draftcontent17', 'draftcontent17', 'longtext', 1, 1, 1, 1),
+																														   (NULL, '83', 'draftcontent18', 'draftcontent18', 'longtext', 1, 1, 1, 1),   
+																														   (NULL, '83', 'draftcontent19', 'draftcontent19', 'longtext', 1, 1, 1, 1);
+
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES  
+('', 46, 'content10', 'content10', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent1', 'draftcontent1', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent2', 'draftcontent2', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent3', 'draftcontent3', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent4', 'draftcontent4', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent5', 'draftcontent5', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent6', 'draftcontent6', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent7', 'draftcontent6', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent8', 'draftcontent8', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent9', 'draftcontent9', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent10', 'draftcontent10', 'longtext', 1, 1, 1, 1);
+
+INSERT INTO `dims_mb_field` (`id`, `id_table`, `name`, `label`, `type`, `visible`, `indexed`, `protected`, `level`) VALUES  
+('', 46, 'content11', 'content11', 'longtext', 1, 1, 1, 1),
+('', 46, 'content12', 'content12', 'longtext', 1, 1, 1, 1),
+('', 46, 'content13', 'content13', 'longtext', 1, 1, 1, 1),
+('', 46, 'content14', 'content14', 'longtext', 1, 1, 1, 1),
+('', 46, 'content15', 'content15', 'longtext', 1, 1, 1, 1),
+('', 46, 'content16', 'content16', 'longtext', 1, 1, 1, 1),
+('', 46, 'content17', 'content17', 'longtext', 1, 1, 1, 1),
+('', 46, 'content18', 'content18', 'longtext', 1, 1, 1, 1),
+('', 46, 'content19', 'content19', 'longtext', 1, 1, 1, 1),
+
+('', 46, 'draftcontent11', 'draftcontent11', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent12', 'draftcontent12', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent13', 'draftcontent13', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent14', 'draftcontent14', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent15', 'draftcontent15', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent16', 'draftcontent16', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent17', 'draftcontent17', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent18', 'draftcontent18', 'longtext', 1, 1, 1, 1),
+('', 46, 'draftcontent19', 'draftcontent19', 'longtext', 1, 1, 1, 1);
+

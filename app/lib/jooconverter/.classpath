@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry output="web/WEB-INF/classes" kind="src" path="web/WEB-INF/src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/juh-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/jurt-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/ridl-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/sandbox-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/unoil-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/test/PDFBox-0.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/test/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/web/commons-fileupload-1.0.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

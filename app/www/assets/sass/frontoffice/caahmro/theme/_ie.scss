@@ -1,0 +1,232 @@
+img { border: none; } // On enleve les bordures pour IE
+
+.ie9 {
+
+	.header img { margin-top: 1em; }
+}
+
+.ie8 {
+
+	.large-hidden, .medium-hidden {
+		display: none !important;
+	}
+	.large-hidden {
+	    display: none;
+	}
+
+	.background_header {
+	    background-attachment: scroll, scroll;
+	    background-clip: border-box, border-box;
+	    background-color: rgb(0, 0, 0);
+	    background-image: url("/assets/images/frontoffice/caahmro/design/small-heading-grass.jpg");
+	    background-origin: padding-box, padding-box;
+	    background-position: center top;
+	    background-repeat: repeat, repeat;
+	    background-size: auto auto, auto auto;
+	    height: 150px;
+	    padding: 10px 20px;
+	}
+
+	nav.opacity {
+	    background-color: black;
+	    left: 0;
+	    position: fixed;
+	    top: 0;
+	    transition-duration: 250ms;
+	    transition-property: all;
+	    width: 100%;
+	    z-index: 100;
+	    /*height: 50px;*/
+	    display: inline;
+	    color: grey;
+	}
+
+	div.collapse-group input{
+		background-color: #E5E5E5;
+	    border-radius: 8px;
+	    padding: 5px;
+	}
+
+	.password-btn{
+		background-position: 0px 50%;
+		width: 30px;
+	}
+	
+	.header img {
+		margin-top: 1.5em;
+		float: left;
+		display: inline;
+	}
+
+	nav ul {
+	    list-style-type: none;
+	}
+
+	nav li {
+	    display: inline-block;
+	    position: relative;
+	    vertical-align: top;
+	}
+
+	nav a {
+		color: rgb(255, 255, 255);
+	    display: block;
+	    font-size: 0.9em;
+	    height: 50px;
+	    padding: 5px;
+	    padding-right: 0px;
+	    text-align: center;
+	    transition-duration: 250ms;
+	    transition-property: all;
+	    width: 130px;
+	    word-break: normal;
+	}
+	nav .has-subnav > a {
+		height: 65px;
+	}
+
+	nav.opacity li.has-subnav ul {
+	    background-color: black;
+	    display: none;
+	    margin-left: 0;
+	    padding-left: 0;
+	    position: absolute;
+	}
+	nav.opacity li.has-subnav:hover > ul{
+		display:block;
+	    background-color: black;
+	    li.third-level:hover > ul{
+	    	display:block;
+		    background-color: black;
+		    a {
+		    	color: rgb(255, 255, 255);
+		    }
+	    }
+	}
+	nav.opacity li.has-subnav.last-child > ul li.third-level a,
+	nav.opacity li.has-subnav.last-child > ul li.third-level > ul li a{
+		padding-right:5px;
+	}
+
+	nav .has-subnav > ul li {
+	    display: block;
+	    background-color: black;
+	}
+
+/* En attendant de trouver la correction pour l'affichage des puces pour ouvrir le menu */
+	nav .subtoggle-link, nav .toggle-link {
+	    display: none;
+	}
+/** 		**/
+
+	nav .subtoggle-link + a:after {
+	    font-size: 1.2em;
+	    position: absolute;
+	    right: 0px;
+	    top: 3px;
+	}
+
+	nav li.third-level ul {
+	    background-color: black;
+	    display: none;
+	    /*left: 180px;*/
+	    padding-left: 0;
+	    position: absolute;
+	    top: 0;
+	}
+
+	li.third-level a {
+	    /*width: 180px;*/
+	}
+
+	img.logo_home{
+		margin-left: 460px !important;
+	}
+
+	// Bloc qui permet de fix le sliders, car il ne connait pas "background"
+	// ni la gestion des multiples background
+	// .slider {
+	// 	background-image: image-url('frontoffice/caahmro/slides/bg-1.jpg');
+
+	// 	> * {
+	// 		background-image: image-url('frontoffice/caahmro/design/ie-bg-slider.png');
+	// 	}
+	// }
+
+	#layerslider {
+		> div {
+			float: left;
+		}
+	}
+
+	.white-area {
+		background: white;
+	}
+
+	.dark-area {
+
+		.bglight {
+			background-color: #3a3a3a;
+
+			.grid4 > * { width: 23.5%; height: 250px; }
+		}
+	}
+
+
+	[class*=icon-] { display: none; } // On n'affiche pas les fonts-icons
+
+}
+
+
+.ie7 {
+
+	.header {
+
+		img {
+			margin-top: 1.5em;
+			margin-right: 10px;
+			float: left;
+			display: inline;
+		}
+	}
+
+	nav {
+		display: inline;
+		float: right;
+		margin-left: -10%;
+
+		ul { margin: 0; padding: 0; }
+
+		li {
+			margin: 0 5px 0 0;
+			padding: 0;
+			float: left;
+		}
+
+		a {
+			padding: 30px 10px;
+			display: block;
+		}
+	}
+
+	.slider { display: none; }
+
+	.dark-area {
+
+		.bglight {
+
+			padding: 0;
+			height: 220px;
+			background-color: #3a3a3a;
+			overflow: hidden;
+
+
+			.grid4 > * {
+				margin: 0;
+				width: 20.5%;
+				height: 300px;
+			}
+		}
+	}
+
+}

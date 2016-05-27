@@ -1,0 +1,86 @@
+.group-spec {
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	@include border-radius(5px);
+	border: 1px solid darken(#f2f2f2, 10%);
+	overflow: hidden;
+
+	input[type=text],
+	input[type=search] {
+		width: 85%;
+		padding: 6px 5px 5px 5px;
+		background-color: none;
+		border: none;
+	}
+
+	input[type=image] {
+		margin: 0;
+		padding: 5px;
+		float: right;
+		width: 30px;
+		height: 30px;
+		border: none;
+		background-color: #f2f2f2;
+
+		@include transition-property(all);
+		@include transition-duration(300ms);
+		@include transition-delay(100ms);
+
+		&:hover {
+			background-color: lighten($main-color, 10%);
+		}
+	}
+}
+
+.form-align {
+
+	margin-bottom: 10px;
+
+	label {
+		margin-right: 15px;
+		width: 15%;
+	}
+
+	textarea,
+	select,
+	input {
+		padding: 5px;
+		height: 40px;
+		width: 70%!important;
+		border: 1px solid darken(#f2f2f2, 10%);
+		@include border-radius(5px);
+
+		@include transition-property(all);
+		@include transition-duration(200ms);
+		@include transition-delay(50ms);
+
+		&:focus {
+			@include box-shadow(rgba(0,0,0,.3) 0 0 3px);
+		}
+	}
+
+	select[required].required,
+	input[required].required{
+		padding-right: 15px;
+		background-image: image-url('backoffice/pureBO/icon/required.png');
+		background-repeat: no-repeat;
+		background-position: 99.5%;
+		-webkit-background-size: 10px;
+			 -o-background-size: 10px;
+				background-size: 10px;
+	}
+
+	select { padding-top: 10px; }
+
+	textarea {
+		height: 100px;
+		display: inline-block;
+	}
+
+
+}
+
+fieldset {
+	background-color: #f2f2f2;
+}

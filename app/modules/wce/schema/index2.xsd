@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:element name="dims_index">
+        <xsd:attribute name="version" type="xsd:int" use="required"/>
+        <xsd:complexType>
+            <xsd:sequence>
+                    <xsd:element name="dims_header" type="Header" minOccurs="0" maxOccurs="1"/>       
+                    <xsd:element name="dims_body" type="Body" minOccurs="0" maxOccurs="1"/>  
+            </xsd:sequence>            
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="Header">
+        <xsd:attribute name="charset" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="UTF-8"/>
+                    <xsd:enumeration value="ISO-8859-15"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:sequence>
+                <xsd:element name="dims_stylesheet" type="Stylesheet" minOccurs="0" maxOccurs="unbounded"/>       
+        </xsd:sequence>
+        <xsd:attribute name="additionnal_style" type="xsd:string"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Stylesheet">
+        <xsd:attribute name="type" type="xsd:string" use="required"/>
+        <xsd:attribute name="href" type="xsd:string" use="required"/>
+        <xsd:attribute name="media" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Body">    
+        <xsd:attribute name="class" type="xsd:string"/>
+        <xsd:sequence>
+            <xsd:element name="dims_block" type="Block" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Block">    
+        <xsd:sequence>
+            <xsd:attribute name="type"  type="xsd:string" use="required"/>
+            <xsd:attribute name="id" type="xsd:string" use="required"/>
+            <xsd:attribute name="class" type="xsd:string"/>
+            <xsd:attribute name="style" type="xsd:string"/>
+            <xsd:element name="block" type="Block" minOccurs="0" maxOccurs="unbounded"/>  
+        </xsd:sequence> 
+    </xsd:complexType>
+    
+</xsd:schema>

@@ -1,0 +1,1 @@
+<div id="calendardiv" style="background-color:#ffffff;height:auto;position:absolute;visibility:hidden;width:150px;z-index:100;layer-background-color:white"></div>

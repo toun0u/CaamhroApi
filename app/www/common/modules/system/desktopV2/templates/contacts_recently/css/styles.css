@@ -1,0 +1,95 @@
+div.zone_companies_recently{
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 4px;
+    padding: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+h1.h1_zone_companies_recently{
+    border-bottom: 1px solid #D6D6D6;
+    float: left;
+    margin: 0 0 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+table.zone_companies_recently{
+    float: left;
+}
+
+div.ro_pastille{
+    float: left;
+    height: 50px;
+    line-height: 64px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+td.ro_zone_details{
+    float: left;
+    width: 362px;
+}
+
+div.ro_title{
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+    color: #df1d31;
+}
+
+div.ro_title p{
+	margin: 0px;
+}
+td.footer{
+	font-size: 10px;
+	color: #888888;
+	font-style: italic;
+	margin-top: 5px;
+	width: 100%;
+	text-align: right;
+}
+td.footer a{
+	text-decoration: none;
+	color: #888888;
+}
+
+td.footer a:hover{
+	color: #555555;
+}
+
+td.ro_zone_details img{
+    margin-left: 10px;
+    vertical-align: sub;
+    width: 20px;
+}
+
+table.ro_calendar{
+    float: right;
+}
+
+td.bloc_calendar {
+    display: block;
+    float: left;
+    padding: 0px;
+    width: 54px;
+}
+
+td.bloc_calendar table{
+    box-shadow: 0 2px 2px #aaa;
+}
+
+td.calendar_top {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+td.calendar_bot {
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+    color: #424242;
+    font-size: 14px;
+    padding: 5px;
+}

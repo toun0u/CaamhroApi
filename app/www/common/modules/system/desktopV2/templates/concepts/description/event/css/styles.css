@@ -1,0 +1,82 @@
+div.zone_description{
+    float:left;
+    width: 99%;
+    border-bottom: 1px solid #D6D6D6;
+}
+div.desc_picture_mini img{
+    float: left;
+    width: 61px;
+}
+
+div.desc_content{
+    float:left;
+    margin-left: 20px;
+}
+
+div.desc_content h1, div.desc_content h2, div.desc_content h3 {
+    margin: 0px;
+}
+
+div.desc_content table td img{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+}
+
+div.desc_content table td span{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+}
+
+td.title_desc{
+    text-align: right;
+    font-weight: bold;
+}
+
+div.desc_date{
+    float:right;
+}
+
+div.bloc_ligne {
+    float: left;
+}
+
+table.ro_calendar {
+    float: right;
+}
+
+td.bloc_calendar {
+    display: block;
+    float: left;
+    padding: 0;
+    width: 54px;
+}
+
+td.bloc_calendar > table {
+    box-shadow: 0 2px 2px #AAAAAA;
+    border-bottom: none !important;
+}
+
+td.calendar_top {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+td.calendar_bot {
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+    color: #424242;
+    font-size: 14px;
+    padding: 5px;
+}
+
+div.desc_picture_grande{
+    float:right;
+}
+
+div.desc_content > table td {
+	float: left;
+}

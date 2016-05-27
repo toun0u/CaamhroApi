@@ -1,0 +1,10 @@
+java -jar yuicompressor-2.3.5.jar ../include/portal.js > ../include/portal.min.js
+java -jar yuicompressor-2.3.5.jar ../include/functions.js > ../include/functions.min.js
+java -jar yuicompressor-2.3.5.jar ../include/functions-light.js > ../include/functions-light.min.js
+java -jar yuicompressor-2.3.5.jar ../include/scriptaculous.js > ../include/scriptaculous.min.js
+java -jar yuicompressor-2.3.5.jar ../include/effects.js > ../include/effects.min.js
+java -jar yuicompressor-2.3.5.jar ../include/prototype.js > ../include/prototype.min.js
+java -jar yuicompressor-2.3.5.jar ../include/portal.js > ../include/portal.min.js
+java -jar yuicompressor-2.3.5.jar ../include/excanvas.js > ../include/excanvas.min.js
+java -jar yuicompressor-2.3.5.jar ../include/unittest.js > ../include/unittest.min.js
+

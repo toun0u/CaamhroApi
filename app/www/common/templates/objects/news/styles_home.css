@@ -1,0 +1,89 @@
+div.bloc_menu_right_content div.footer_actus{
+	text-align: center;
+}
+div.bloc_menu_right_content div.footer_actus a{
+	color: #333;
+	text-decoration: underline !important;
+}
+div.actu{
+	color: #333;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+div.bloc_header_bloc_left h3{
+	background-color:rgb(177, 13, 0) !important;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	margin: 0 0 10px;
+	padding: 5px;
+}
+
+p.actu_date{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3px;
+}
+
+div.actu_title{
+	color: #333;
+	font-weight: bold;
+	text-transform:uppercase;
+	margin-bottom: 3px;
+}
+
+div.actu_title a{
+	color: #333;
+	font-size: 10px;	
+	font-family: avantgarde-book-webfont, sans-serif;
+}
+
+div.actu_details{
+	overflow: hidden;
+}
+
+div.actu_details div.actu_picto img{
+	width: 25px;
+	height: auto;
+	float: left;
+}
+
+div.actu_details div.actu_description{
+	margin-left: 28px;
+	font-weight: normal;
+	font-family: arial;
+	color: #757575;
+}
+
+div.actu_full_place{
+	margin-left: 0 !important;
+}
+
+div.footer_actus a{
+	color: #B70B01 !important;
+	text-decoration: none;
+}
+
+/* Spécificités sur les WCE Objects ----------*/
+span.level_actu{
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+span.low_gravity{
+	background-color: green;
+}
+
+span.middle_gravity{
+	background-color: orange;
+}
+
+span.high_gravity{
+	background-color: red;
+}

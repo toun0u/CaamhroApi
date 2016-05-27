@@ -1,0 +1,152 @@
+@include r(medium) {
+
+    /* quick tablet reset */
+    .w60,
+    .w66,
+    .w70,
+    .w75,
+    .w80,
+    .w90,
+    .w100,
+    .w600p,
+    .w700p,
+    .w800p,
+    .w960p,
+    .mw960p,
+    .medium-wauto {
+        width: auto;
+    }
+
+    .width70 {
+        width: 100%;
+    }
+
+    /* layouts for medium (m) screens */
+    .medium-hidden,
+    .tablet-hidden {
+        display: none !important;
+    }
+
+    .medium-visible {
+        display: block !important;
+    }
+
+
+    .medium-no-float {
+        float: none;
+    }
+
+
+    .medium-inbl {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        *vertical-align: auto;
+        zoom: 1;
+        *display: inline;
+        float: none;
+    }
+
+    .medium-row {
+        display: table !important;
+        table-layout: fixed !important;
+        width: 100% !important;
+    }
+
+
+    .medium-col {
+        display: table-cell !important;
+        vertical-align: top !important;
+    }
+
+    /* widths for medium (m) screens */
+    .medium-w25 {
+        width: 25% !important;
+    }
+
+    .medium-w33 {
+        width: 33.3333% !important;
+    }
+
+
+    .medium-w50 {
+        width: 50% !important;
+    }
+
+    .medium-w66 {
+        width: 66.6666% !important;
+    }
+
+    .medium-w75 {
+        width: 75% !important;
+    }
+
+    .medium-w100 {
+        display: block !important;
+        float: none !important;
+        clear: none !important;
+        width: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border: 0;
+    }
+
+    .medium-ma0,
+    .medium-man {
+        margin: 0 !important;
+    }
+
+    .form-align * > label {
+        margin-right: 0px;
+        text-align: left;
+        display: block;
+    }
+
+    /* -------------------------------------------------- */
+
+
+    .slider { display: none; }
+
+    @media only screen and (min-width: 935px) and (max-width: 1023px) {
+       .slider { display: block; }
+    }
+
+    /*nav a {
+     width: 120px;
+    }
+    nav .third-level ul {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    left: 120px;
+    }*/
+    nav ul a.active, nav ul a:hover {
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        -ms-border-radius: 5px 5px 0 0;
+        -o-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    .bglight .mod {
+        margin: 0;
+        padding: 10px;
+        height: 23em;
+        border-right: 1px solid #7d7d7d;
+    }
+
+    .bglight .mod:last-child {
+        border-right: 0;
+    }
+
+
+    @media only screen and (min-width: $bp-btablet) and (max-width: 750px) {
+    
+        .form_row .label { width: 100px!important; } 
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    /* Retina-specific stuff here */
+}

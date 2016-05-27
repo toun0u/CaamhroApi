@@ -1,0 +1,176 @@
+.slider {
+	background-color: #FFF;
+	background-repeat: repeat-x;
+	background-position: top center;
+	overflow: hidden;
+	z-index: 1;
+	color: white;
+    /*margin-top: 76px;*/
+
+	> div > div {
+		height: inherit;
+		background: rgba(0, 0, 0, 0.7);
+		@include box-shadow(rgba(0, 0, 0, 0.7) 0 0 55px 5px);
+	}
+}
+
+
+#layerslider {
+	height: 150px;
+}
+
+
+.ls-defaultskin {
+
+}
+
+.ls-defaultskin .ls-bottom-nav-wrapper {
+	text-align: center;
+	margin: auto;
+	position: relative;
+}
+
+
+
+.ls-defaultskin .ls-nav-sides,
+.ls-defaultskin .ls-bottom-slidebuttons a,
+.ls-defaultskin .ls-nav-start,
+.ls-defaultskin .ls-nav-stop {
+	background-image: image-url('frontoffice/caahmro/icon/skin.png');
+}
+
+// .ls-defaultskin .ls-nav-prev{
+// 	background-image: image-url('frontoffice/caahmro/icon/left_arrow.png');
+// }
+// .ls-defaultskin .ls-nav-next{
+// 	background-image: image-url('frontoffice/caahmro/icon/right_arrow.png');
+// }
+
+.ls-defaultskin .ls-nav-prev {
+	background-position: 0px 0px;
+}
+
+.ls-defaultskin .ls-nav-prev:hover {
+	background-position: 0px -50px;
+}
+
+.ls-defaultskin .ls-nav-next {
+	background-position: -140px 0px;
+}
+
+.ls-defaultskin .ls-nav-next:hover {
+	background-position: -140px -50px;
+}
+
+.ls-defaultskin .ls-nav-start {
+	background-position: -300px 0px;
+}
+
+.ls-defaultskin .ls-nav-start:hover {
+	background-position: -300px -75px;
+}
+
+.ls-defaultskin .ls-nav-stop {
+	background-position: -450px 0px;
+}
+
+.ls-defaultskin .ls-nav-stop:hover {
+	background-position: -450px -75px;
+}
+
+.ls-defaultskin .ls-bottom-slidebuttons a {
+	background-position: 0px -150px;
+}
+
+.ls-defaultskin .ls-bottom-slidebuttons a.ls-nav-active {
+	background-position: -75px -150px;
+}
+
+.ls-defaultskin .ls-nav-sideleft {
+	background-position: -150px -150px;
+}
+
+.ls-defaultskin .ls-nav-sideright {
+	background-position: -225px -150px;
+}
+
+
+
+.ls-defaultskin .ls-nav-prev,
+.ls-defaultskin .ls-nav-next {
+	width: 35px;
+	height: 50px;
+	z-index: 10000;
+	top: 45%;
+	position: absolute;
+	outline: none;
+}
+
+.ls-defaultskin .ls-nav-prev {
+	left: 0;
+}
+
+.ls-defaultskin .ls-nav-next {
+	right: 0;
+}
+
+
+
+.ls-defaultskin .ls-bottom-slidebuttons,
+.ls-defaultskin .ls-bottom-slidebuttons a,
+.ls-defaultskin .ls-nav-start,
+.ls-defaultskin .ls-nav-stop,
+.ls-defaultskin .ls-bottom-nav-wrapper,
+.ls-defaultskin .ls-nav-sides {
+	height: 28px;
+}
+
+.ls-defaultskin .ls-bottom-slidebuttons,
+.ls-defaultskin .ls-bottom-slidebuttons a,
+.ls-defaultskin .ls-nav-start,
+.ls-defaultskin .ls-nav-stop,
+.ls-defaultskin .ls-nav-sides {
+	display: inline-block;
+}
+
+.ls-defaultskin .ls-nav-start,
+.ls-defaultskin .ls-nav-stop {
+	width: 24px;
+}
+
+.ls-defaultskin .ls-bottom-slidebuttons a {
+	width: 20px;
+}
+
+.ls-defaultskin .ls-nav-sides {
+	width: 6px;
+}
+
+.ls-layer {
+	display: none;
+}
+
+.ls-active,
+.ls-animating {
+	display: block;
+}
+
+.ls-layer > * {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+
+.ls-layer .ls-bg {
+	left: 50%;
+	top: 50%;
+}
+
+.ls-nav {
+	text-align: center;
+}
+
+.ls-nav a {
+	display: inline-block;
+}

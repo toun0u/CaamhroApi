@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+<nodes count="7" >
+<Node id="29" name="Jean-Claude KNEBELER" type="P" url="http://lfb.dims.fr/admin.php?contact_id=29" >Jean-Claude KNEBELER</Node>
+<Node id="26" name="Carole TOMPERS" type="P" url="http://lfb.dims.fr/admin.php?contact_id=26" >Carole TOMPERS</Node>
+<Node id="53" name="Jeannot KRECKE" type="P" url="http://lfb.dims.fr/admin.php?contact_id=53" >Jeannot KRECKE</Node>
+<Node id="38" name="Carlo THELEN" type="P" url="http://lfb.dims.fr/admin.php?contact_id=38" >Carlo THELEN</Node>
+<Node id="11" name="Patrick NOURRISSIER" type="P" url="http://lfb.dims.fr/admin.php?contact_id=11" >Patrick NOURRISSIER</Node>
+<Node id="54" name="Cathy LAMMAR" type="P" url="http://lfb.dims.fr/admin.php?contact_id=54" >Cathy LAMMAR</Node>
+<Node id="25" name="Lucien BHER" type="P" url="http://lfb.dims.fr/admin.php?contact_id=25" >Lucien BHER</Node>
+</nodes>
+<edges count="7"  >
+<Edge source-node="38" target-node="53" type="1" count="20" article="void" />
+<Edge source-node="25" target-node="53" type="1" count="3" article="void" />
+<Edge source-node="29" target-node="53" type="2" count="5" article="void" />
+<Edge source-node="53" target-node="26" type="2" count="3" article="void" />
+<Edge source-node="26" target-node="11" type="1" count="2" article="void" />
+<Edge source-node="11" target-node="29" type="1" count="1" article="void" />
+<Edge source-node="54" target-node="53" type="1" count="20" article="void" />
+</edges>
+</graph>

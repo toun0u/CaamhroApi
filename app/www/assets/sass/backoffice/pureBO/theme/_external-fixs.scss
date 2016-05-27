@@ -1,0 +1,353 @@
+// Fichier qui contient les corrections de
+// styles à appliquer quand le thème PureBO est activé
+// Ces derniers corrigent les autres pages pour éviter les bugs
+
+#dims_connexion { width: auto; }
+
+table,
+td,
+th { border: none; }
+
+.pbo-content:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+#inet_v2_content {
+
+	.content_gauche {
+		width: 73%;
+		clear: none;
+		float: left;
+	}
+
+	h2 {
+		font-size: 15px!important;
+		font-weight: bold;
+	}
+
+	.zone_search { margin-bottom: 50px; }
+
+	#only_me {
+		position: relative;
+		top: 4px;
+		right: 5px;
+
+		+ label {
+			padding-top: 10px;
+		}
+	}
+
+	div.zone_recent_activities {
+		div.ro_details {
+			a {
+				color: #424242!important;
+				&:hover {
+					color: inherit!important;
+				}
+			}
+		}
+
+		.calendar {
+			position: relative;
+			display: inline;
+			top: -15px;
+			width: 15%;
+			height: 70px;
+		}
+
+		.calendar_top { padding: 1px!important; font-size: 10px!important;}
+		.calendar_bot { text-align: center !important; }
+	}
+
+	.zone_companies_recently {
+		padding: 0;
+
+		table { width: auto; }
+
+		td,
+		th { padding: 1px 5px }
+	}
+
+	.classshortcut {
+		padding: 2px;
+		text-align: center;
+		vertical-align: top;
+		font-weight: bold;
+		width:100px;
+		margin-bottom: 5px;
+		display:inline-block;
+		a {
+			font-size: 11px;
+			text-decoration: none;
+		}
+		img {
+			text-align: center;
+		}
+	}
+
+	#country_chzn,
+	#year_chzn {
+		position: relative;
+		top: -10px;
+	}
+
+	#body_planning {
+		max-width: 98%;
+
+		#radio_selector_period {
+			margin: 0;
+
+			input[type=radio] {
+				position: absolute;
+				left: -9999px;
+
+				&:checked + label {
+					background-color: white!important;
+				}
+			}
+
+			label {
+				padding: 5px;
+				background-color: darken(#FFF, 5%);
+				border: 1px solid darken(#FFF, 15%);
+
+				&:not(first-child) {
+					margin-left: -3px;
+				}
+			}
+
+			#radio1 + label { @include border-radius(5px 0 0 5px); }
+			#radio3 + label { @include border-radius(0 5px 5px 0); }
+
+			input:last-child {
+				margin-left: -3px;
+			}
+		}
+	}
+}
+
+#activity_general {
+
+	.vatop {
+		margin-left: -70px;
+	}
+
+	.vatop table td  {
+		max-width: 400px!important;
+		display: inline-block;
+	}
+
+	label[class=title] {
+		display: block;
+		width: 150px!important;
+	}
+
+	.w20p {
+		width: 30px;
+	}
+}
+
+#activity_localisation {
+	.w50p {
+		width: 100px;
+	}
+
+	#activity_city_id {
+		max-width: 100%;
+	}
+}
+
+#activity_email_alert {
+	table {
+
+		tr {
+			td:first-child {
+				width: 30px;
+			}
+			td {
+				width: 70px;
+			}
+
+			.w20p { width: 30px; }
+		}
+
+	}
+}
+
+.ui-icon,
+.ui-icon-searchfield:after {
+	background-color: transparent;
+}
+
+#colorpicker_crosshairs {
+	float: left;
+}
+
+#new_company_contact {
+	.title_new_contact { width: 70px!important; }
+}
+
+#cadre_new_company {
+	margin-top: -92px;
+	margin-left: -10px;
+	display: block;
+	border: none;
+
+	.cadre_add_picture {
+		border: none!important;
+	}
+
+	+ span {
+		margin-top: -65px!important;
+	}
+}
+
+#new_company_city,
+#new_company_search_country {
+	+ span { display: none!important; }
+}
+
+.browser_address_book {
+
+	.ligne1_sel {
+		padding: 5px 0;
+	}
+
+	.text_nav_AB {
+		margin: 0!important;
+		padding: 0!important;
+	}
+
+	.icon_nav_AB {
+
+		margin-top: 0!important;
+		padding-top: 2px!important;
+
+		img {
+			min-width: 11px!important;
+			min-height: 14px!important;
+		}
+	}
+
+	.icon_contacts_AB {
+		margin-right: 20px;
+
+		img {
+			min-width: 20px!important;
+			min-height: 20px!important;
+		}
+	}
+
+	.icon_fiche_contacts_AB {
+		img {
+			min-width: 40px!important;
+			min-height: 40px!important;
+		}
+	}
+
+	.icon_fiche_nav_AB {
+		img {
+			min-width: 11px!important;
+			min-height: 14px!important;
+		}
+	}
+}
+
+.zone_new_lead,
+.zone_new_activity {
+
+	label[for=keywords],
+	label[for=opportunity],
+	label[for=product],
+	label[for=responsible] {
+		width: 100px;
+	}
+	.chzn-drop,
+	.chzn-container {
+		width: 220px;
+	}
+}
+
+.ro_calendar {
+	float: right !important;
+	width: 130px;
+
+	.bloc_calendar + td { margin: 0; padding: 0; }
+
+	.calendar_top { padding: 1px!important; font-size: 10px!important;}
+	.calendar_bot { text-align: center !important; }
+}
+
+#activity_title {
+	width: auto !important;
+}
+
+.frame {
+	table {
+		td:first-child img { display: none; }
+		td:nth-child(3) img {
+			min-width: 20px!important;
+			min-height: 20px!important;
+		}
+	}
+}
+
+#app_offer_general {
+	.w50p { width: 80px; }
+}
+
+#app_offer_localisation {
+	.w50p { width: 100px; }
+	select { max-width: 100%; }
+}
+
+#opportunities,
+#activities {
+	.w20p { width: auto !important; }
+	th {
+		font-size: 10px;
+	}
+}
+
+#dims_popup.dims_popup.ui-dialog.ui-widget.ui-widget-content.ui-corner-all {
+	min-width: 249px!important;
+	min-height: 100px !important;
+}
+
+#module_ct {
+	.ui-tabs.ui-widget.ui-widget-content.ui-corner-all + table {
+		float: left; // On force l'élément à être flottant pour que le clear:both fonctionne
+
+		&:after {
+			display: table;
+			content: "";
+			clear: both;
+		}
+	}
+}
+
+.form_object_block form .sub_bloc table {
+	position: relative;
+}
+
+.zone_graphe {
+	.cadre_legende {
+		margin: 0;
+		width: 19%;
+	}
+}
+
+.lien_stats {
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+}
+
+.system_main {
+ 	> .ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+ 		max-height: 40px;
+ 		overflow: hidden;
+ 	}
+}

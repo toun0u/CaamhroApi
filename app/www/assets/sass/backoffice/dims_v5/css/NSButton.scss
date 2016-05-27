@@ -1,0 +1,405 @@
+.NSButton {
+	padding:6px;
+	float:right;
+}
+
+.NSButton>div.main,
+.NSButton>div.main_over{
+	font-family:'Trebuchet MS';
+	font-size:8pt;
+	text-align:right;
+	color:#000000;
+	font-weight:none;
+	white-space: nowrap;
+}
+
+.NSButton>div.main a,
+.NSButton>div.main_over a{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NSButton>div.main a:hover,
+.NSButton>div.main_over a:hover{
+	color:#008500;
+}
+
+.NSButton>div.main img,
+.NSButton>div.main_over img{
+	margin:0px 0px 0px 5px;
+	border:none;
+	vertical-align:middle;
+}
+
+.NSButton>div.main_over img{
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+
+/* BTN 01 */
+
+.NS_FRAME_STYLE_DEFAULT .NSButton,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton {
+	padding:0px;
+	float:none;
+}
+
+.NS_FRAME_STYLE_DARK_BLUE .NSButton {
+	padding-top:4px;
+	margin-bottom:4px;
+}
+
+
+/* BTN 01 */
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main,
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over
+{
+	background:image-url('backoffice/dims_v5/media/btn28_bg.gif') no-repeat 0px 0px;
+	margin:auto;
+	float:right;
+	margin:5px
+}
+
+
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main .item,
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over .item,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main .item,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over .item
+{
+	font-family:'Trebuchet MS';
+	background:image-url('backoffice/dims_v5/media/btn28_right.gif') no-repeat right 0px;
+	padding:6px 12px 5px 9px;
+	margin:0px;
+	font-size:7pt;
+	text-align:left;
+	color:#000000;
+	font-weight:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main .item a,
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over .item a,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main .item a,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over .item a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main .item a:hover,
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over .item a:hover,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main .item a:hover,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over .item a:hover
+{
+	color:#A7A7A7;
+	text-decoration:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main .item img,
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over .item img,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main .item img,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over .item img
+{
+	float:left;
+	margin:0px 5px 0px 0px;
+	border:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButton>div.main_over .item img,
+.NS_FRAME_STYLE_DARK_BLUE .NSButton>div.main_over .item img{
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+.NSButtonMini>div.main_over img{
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main,
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over
+{
+	background:transparent image-url('backoffice/dims_v5/media/btn22_bg.gif') no-repeat 0px 0px;
+	margin:auto;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main .item,
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over .item
+{
+	font-family:'Trebuchet MS';
+	background:transparent image-url('backoffice/dims_v5/media/btn22_right.gif') no-repeat right 0px;
+	padding:3px 5px;
+	margin-right:-4px;
+	text-align:left;
+	color:#000000;
+	font-weight:bold;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main .item a,
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over .item a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main .item a:hover,
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over .item a:hover
+{
+	color:#A7A7A7;
+	text-decoration:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main .item img,
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over .item img
+{
+	float:left;
+	margin:0px 5px 0px 0px;
+	border:none;
+}
+
+.NS_FRAME_STYLE_DEFAULT .NSButtonMini>div.main_over .item img {
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+.NSButtonMini>div.main_over img{
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+
+
+
+
+
+/* boutons de style texte */
+/*
+.NS_BUTTON_STYLE_TEXT {
+	float:right;
+}
+*/
+.NS_BUTTON_STYLE_TEXT .NSButton {
+	padding:6px;
+	float:right;
+}
+
+.NS_BUTTON_STYLE_TEXT .NSButton>div.main,
+.NS_BUTTON_STYLE_TEXT .NSButton>div.main_over{
+	float:none;
+	background:none;
+	margin:auto;
+/*	float:right;*/
+	font-family:'Trebuchet MS';
+	font-size:8pt;
+	text-align:right;
+	color:#000000;
+	font-weight:bold;
+/*	margin:0px 0px 0px 25px;*/
+	white-space: nowrap;
+
+}
+.NS_BUTTON_STYLE_TEXT .NSButton>div.main .item,
+.NS_BUTTON_STYLE_TEXT .NSButton>div.main_over .item{
+	background:none;
+}
+
+
+
+
+
+/* BTN 01 */
+/*
+.control_z .btn01,
+.control_z .btn01_over{
+	float:right;
+	margin:0px 15px 0px 0px;
+}
+*/
+.NS_FRAME_STYLE_CONTROL .NSButton{
+	border:0px solid magenta;
+	margin:0px;
+	padding:0px;
+	margin-right:15px;
+	float:right;
+}
+
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main,
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over{
+/*	float:left;*/
+	float:left;
+	background:image-url('backoffice/dims_v5/media/btn28_bg.gif') no-repeat 0px 0px;
+/*	margin:10px 0px 5px 0px;*/
+	margin:0px 0px 0px 0px;
+}
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main .item,
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over .item{
+	font-family:'Trebuchet MS';
+	background:image-url('backoffice/dims_v5/media/btn28_right.gif') no-repeat right 0px;
+	padding:6px 12px 5px 9px;
+	margin:0px;
+	font-size:9pt;
+	text-align:left;
+	color:#000000;
+	font-weight:bold;
+}
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main .item a,
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over .item a{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main .item a:hover,
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over .item a:hover{
+	color:#A7A7A7;
+}
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main .item img,
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over .item img{
+	float:left;
+	margin:0px 5px 0px 0px;
+	border:none;
+}
+
+.NS_FRAME_STYLE_CONTROL .NSButton>div.main_over .item img{
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+
+
+
+/* BTN 02 */
+/* Bouton retour � l'accueil
+.btn02{
+	float:right;
+	background:image-url('backoffice/dims_v5/media/grey_btn_bg.gif') no-repeat 0px 0px;
+	margin:5px 0px 0px 0px;
+
+}
+
+.btn02 .item{
+	font-family:'Trebuchet MS';
+	background:image-url('backoffice/dims_v5/media/grey_btn_right.gif') no-repeat right 0px;
+	padding:6px 12px 5px 12px;
+	margin:0px;
+	font-size:8pt;
+	text-align:left;
+	color:#4D4D4D;
+}
+
+.btn02 a{
+	color:#4D4D4D;
+	text-decoration:none;
+}
+
+.btn02 a:hover{
+	color:#A7A7A7;
+}
+*/
+.NSButtonMini {
+display:inline;
+float:right;
+margin-right: 5px;
+}
+
+.NSButtonMini>div.main,
+.NSButtonMini>div.main_over
+{
+	background:transparent image-url('backoffice/dims_v5/media/btn22_bg.gif') no-repeat 0px 0px;
+	margin:auto;
+}
+
+.NSButtonMini>div.main .item,
+.NSButtonMini>div.main_over .item
+{
+	font-family:Helvetica, 'Trebuchet MS';
+	background:image-url('backoffice/dims_v5/media/btn22_right.gif') no-repeat right 0px;
+	padding:3px 3px;
+	margin-right:-4px;
+
+	text-align:left;
+	color:#000000;
+	font-weight:normal;
+}
+
+.NSButtonMini>div.main .item a,
+.NSButtonMini>div.main_over .item a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NSButtonMini>div.main .item a:hover,
+.NSButtonMini>div.main_over .item a:hover
+{
+	color:#A7A7A7;
+	text-decoration:none;
+}
+
+.NSButtonMini>div.main .item img,
+.NSButtonMini>div.main_over .item img
+{
+	float:left;
+	margin:0px 5px 0px 0px;
+	border:none;
+}
+
+.NSButtonMini>div.main_over .item img {
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}
+
+.NSButtonSmall {
+display:inline;
+}
+
+.NSButtonSmall>div.main,
+.NSButtonSmall>div.main_over
+{
+	background:image-url('backoffice/dims_v5/media/btn16_bg.gif') no-repeat 0px 0px;
+	margin:auto;
+}
+
+.NSButtonSmall>div.main .item,
+.NSButtonSmall>div.main_over .item
+{
+	font-family:'Trebuchet MS';
+	background:image-url('backoffice/dims_v5/media/btn16_right.gif') no-repeat right 0px;
+	padding:1px 5px;
+	margin-right:-2px;
+	text-align:left;
+	color:#000000;
+	font-weight:none;
+}
+
+.NSButtonSmall>div.main .item a,
+.NSButtonSmall>div.main_over .item a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+.NSButtonSmall>div.main .item a:hover,
+.NSButtonSmall>div.main_over .item a:hover
+{
+	color:#A7A7A7;
+	text-decoration:none;
+}
+
+.NSButtonSmall>div.main .item img,
+.NSButtonSmall>div.main_over .item img
+{
+	float:left;
+	margin:0px 5px 0px 0px;
+	border:none;
+}
+
+.NSButtonSmall>div.main_over .item img {
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5
+}

@@ -1,0 +1,73 @@
+div#full_index div.alert{
+	color: #2d3132;
+	font-size: 1em;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+div#full_index span.alert_date{
+	color: #2d3132 !important;
+}
+
+div#full_index div.alert_title{
+	color: #e40613;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+div#full_index div.alert_title a{
+	color: #e40613;
+}
+
+div#full_index div.alert_details{
+	overflow: hidden;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+div#full_index div.alert_details div.alert_picto img{
+	width: 25px;
+	height: auto;
+	float: left;
+}
+
+div#full_index div.alert_details div.alert_description{
+	margin-left: 40px;
+}
+
+div#full_index div.alert div.link_alert{
+	text-align: right;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+div#full_index div.alert div.link_alert a{
+	color: #e40613;
+}
+
+div#full_index div.alert div.link_alert a:hover{
+	text-decoration: underline;
+}
+
+div#full_index  span.level_alert{
+	width: 8px;
+	height: 8px;	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+div#full_index  span.low_gravity{
+	background-color: green;
+}
+
+div#full_index  span.middle_gravity{
+	background-color: orange;
+}
+
+div#full_index  span.high_gravity{
+	background-color: red;
+}
+

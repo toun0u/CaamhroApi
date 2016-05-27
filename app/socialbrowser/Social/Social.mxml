@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:local="*" xmlns:fc="http://www.adobe.com/2006/fc"
+ xmlns:ac="http://www.adobe.com/2006/ac"  layout="absolute"
+	 creationComplete="setup()" backgroundGradientColors="[#FFFFFF, #6699FF]"  backgroundGradientAlphas="[1.0, 1.0]">
+	
+	<!-- RoamerDemo.mxml is an application that demonstrates the Roamer component. -->
+	<fc:Roamer id="roamer" 
+		itemRenderer="XMLPersonView"
+		edgeRenderer="{edgeRenderer}" 
+		edgeClicker="{edgeClicker}"
+		repulsionFactor="{nrepulsion.value}" 
+		maxDistanceFromCurrent="{nmaxdistance.value}" 
+		itemLimit="{nvisible.value}"
+		motionThreshold="{nmotion.value}"
+		filterLinks="true"
+		left="0" top="0" right="0" bottom="0" borderColor="#E6E9EC">
+	
+		<fc:removeItemEffect>
+			<mx:Fade alphaFrom="1" alphaTo="0" duration="1000"/>				
+		</fc:removeItemEffect>
+		
+		<fc:addItemEffect>
+			<mx:Fade alphaFrom="0" alphaTo="1" duration="1000"/>
+		</fc:addItemEffect>
+	</fc:Roamer>
+	
+	<mx:Canvas id="roamerctl" x="10" y="119" width="192" height="451" backgroundAlpha="0.63"  backgroundColor="#414681">
+		<mx:CheckBox id="cbmet" x="10" y="289" label="Met" color="#D8DA56"  selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+		<mx:CheckBox id="cbfam" x="10" y="365" label="Family" color="0xcc66ff" selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+		<mx:CheckBox id="cblov" x="10" y="389" label="Lovers" color="0xff9933" selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+		<mx:CheckBox id="cbco" x="10" y="414" label="Co-Occurs" color="0xffffff" selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+		<mx:CheckBox id="cbsup" x="10" y="316" label="Supports" color="0x3300cc" selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+		<mx:CheckBox id="cbcri" x="10" y="340" label="Criticises" color="0xff0000" selected="true" change="cboxChange()" fontWeight="bold" fontFamily="Verdana" fontSize="15" height="28"/>
+
+		<mx:Text x="11.5" y="20" text="Find Person" id="infoText" fontSize="9" color="#F9F6F6" fontWeight="bold"/>
+		<ac:AutoComplete x="11.5" y="45" width="160" id="findentity" dataProvider="{names}" 
+			labelField="label" enter="getEntity()" text="gg"  />
+		<mx:Label x="11.5" y="105" text="Max Visible" fontSize="9" width="81" textAlign="left" color="#F9F6F6" fontWeight="bold"/>
+		<mx:Label x="11.5" y="78" text="Max Hops" fontSize="9" textAlign="left" color="#F9F6F6" width="71" height="17" fontWeight="bold"/>
+		<mx:Label visible="false" x="10" y="361" text="motion stop threshold" fontSize="9" width="133" textAlign="center" color="#dddddd"/>
+		<mx:Button x="10" y="238" label="Hide current item" id="toogleVis"
+			click="toogleItemVisibility()" width="161.5" fontSize="9"/>
+		<mx:Label x="11.5" y="133" text="Item Spacing" fontSize="9" width="84" textAlign="left" color="#F9F6F6" fontWeight="bold"/>
+		<mx:Label x="11.5" y="184" text="Motion" fontSize="9" width="84" textAlign="left" color="#F9F6F6" toolTip="Motion Threshold" fontWeight="bold"/>
+		<mx:NumericStepper x="106.5" y="75" width="65" id="nmaxdistance" value="{roamer.maxDistanceFromCurrent}" minimum="1" maximum="5" stepSize="1" enabled="true"/>
+		<mx:NumericStepper x="106.5" y="102" id="nvisible" value="{roamer.itemLimit}" minimum="20" maximum="350" stepSize="1"/>
+		<mx:NumericStepper x="106.5" y="130" width="65" id="nrepulsion" value="{roamer.repulsionFactor}" minimum="0.1" maximum="1.5" stepSize="0.1"/>
+		<mx:NumericStepper x="106.5" y="181" width="65" value="{roamer.motionThreshold}" minimum="0.01" maximum="2" stepSize="0.01" id="nmotion" enabled="true"/>
+	</mx:Canvas>
+
+	<mx:Image x="10" y="0" source="GOUV_MINECO.png" width="400" height="95"/><!-- convert this icon to a general header widget that includes the current path .....-->
+	<mx:HTTPService id="externalData" url="socnetall.xml" showBusyCursor="true" resultFormat="e4x"
+			result="gotData(['Node','Edge','source-node','target-node'], event)"/>
+	<mx:Script>
+		<![CDATA[
+			import com.adobe.flex.extras.controls.springgraph.GraphNode;
+			import com.adobe.flex.extras.controls.springgraph.GraphEdge;
+			import mx.core.IDataRenderer;
+			
+			import mx.collections.XMLListCollection;
+			import mx.collections.ArrayCollection;
+			import com.adobe.flex.extras.controls.springgraph.SpringGraph;
+			import mx.rpc.events.ResultEvent;
+			import com.adobe.flex.extras.controls.springgraph.Item;
+			import com.adobe.flex.extras.controls.springgraph.Graph;
+			[Bindable]
+			private var names:ArrayCollection = new ArrayCollection();
+			[Bindable]
+			private var edgeRenderer:SocialEdgeRenderer = new SocialEdgeRenderer();
+			[Bindable]
+			private var edgeClicker:EdgeClicker = new EdgeClicker(roamer);
+			[Bindable]
+			private var dofilter:Boolean = false;
+			[Bindable]
+			private var efilters:Array = new Array();
+			[Bindable]
+			private var rep:Number;
+			
+			private var defaulturl:String="lfb.xml";
+			
+			private var sep:int = 3;
+			
+			public var mySO:SharedObject=null;
+			
+			private var mainVisible:Boolean=true;
+		
+			private function setup(): void {
+				//default values
+				var nmaxdistanceVal:Number = 2;
+				var nrepulsionVal:Number = 0.7;
+				var nvisibleVal:Number = 100;
+				var nmotionVal:Number = 0.02
+			
+				//did not find out what that is
+				edgeClicker = new EdgeClicker(roamer);
+				
+				//default values
+				roamer.maxDistanceFromCurrent = nmaxdistanceVal;
+				nmaxdistance.value = nmaxdistanceVal;
+				roamer.repulsionFactor = nrepulsionVal;
+				nrepulsion.value = nrepulsionVal;
+				roamer.itemLimit = nvisibleVal;
+				nvisible.value = nvisibleVal;
+				roamer.motionThreshold = nmotionVal;
+				nmotion.value = nmotionVal;
+				roamer.showHistory = false;
+				
+				cboxChange(); //consider the checkboxes
+				
+				//default file to read
+				externalData.url = defaulturl;	//hardcoded xml file to read
+				roamer.addEventListener("currentItemChange", roamerChange);
+				if (externalData.url != null && externalData.url !='none' )
+					externalData.send();
+			}
+			
+			/**
+			 * Called from XMLPersonView
+			 */
+			public function itemDoubleClick(event: Event): void {
+				roamer.currentItem = event.currentTarget.data;
+			}
+    	
+			
+			  private function gotData(xmlNames: Array, event: ResultEvent): void {	
+				//roamer.edgeRenderer = new SocialEdgeRenderer();
+				roamer.resetHistory();
+				roamer.resetShowHide();
+				var histSelect:String=null;
+				var lasturl:String;
+				var histID:int=-1;
+				
+				roamer.xmlNames = xmlNames;
+				var xml:XML = event.result as XML;
+				
+				roamer.dataProvider = xml;
+				names.removeAll();
+				
+				//
+				var selID:int=-1;
+				for each(var item:XML in xml.descendants("Node")){
+					var id:int = item.@id;
+					var name:String =  item.@name ;
+					
+					var rank:int = item.@rank;
+					if (rank && rank ==1 )
+						selID = id;
+					var val:Object = new Object();
+					val.label = name;
+					val.data=id;
+					names.addItem(val);
+				}
+				var sitem:Item;
+				if(histID > -1 ){
+	        		sitem = roamer.dataProvider.find(histID);
+	        	} else if (selID > -1){
+	        		sitem = roamer.dataProvider.find(selID);
+	        	}
+	        	if (sitem != null && roamer.currentItem != sitem)
+	        			roamer.currentItem = sitem;
+			}
+
+			//don't know exactly what this does
+			private function roamerChange(event:Event):void {
+	        	if (!roamer.currentItem)
+	        		return;
+	        	if(infoText != null) 
+	        		infoText.text = roamer.fullNodeCount + ' Nodes, ' +roamer.fullGraph.edges.length+' edges ';
+	        		var item:Item = roamer.currentItem;
+	        		var count:Number = 0;
+	        	for each (var obj:Object in names){
+	        		count++;
+	        		if (obj.data == item.id){
+	        			findentity.selectedItem=obj;
+	        			return;
+	        		}
+	        		
+	        	}
+	        
+	        }
+
+			/** 
+			 * if the checkboxes are checked or unchecked notify the roamer
+			 */
+	        public function cboxChange():void {
+	        	efilters = new Array();
+	        	if (cbmet.selected)
+	        		efilters.push(1);
+	        	if (cbsup.selected)
+	        		efilters.push(2);
+	            if (cbcri.selected)
+	            	efilters.push(3);
+	            if (cbfam.selected)
+	            	efilters.push(4);
+	            if (this.cblov.selected)
+	            	efilters.push(5);
+	        	if (cbco.selected)
+	        		efilters.push(0);
+	        		
+	        	roamer.linkFilters=efilters;
+	        	
+	        	if (!dofilter)
+	        	  dofilter = true;
+	        }
+	        
+	         private function getEntity():void{
+	        	var dp:Graph = roamer.dataProvider as Graph;
+	        	if(findentity.selectedItem!=null && findentity.selectedIndex!=-1)
+	        	{
+		        	var selected:String = findentity.selectedItem.data
+		        	if(dp.hasNode(selected)){
+		        		var item:Item = dp.find(selected);
+		        		
+		        		if (roamer.currentItem != item){
+		        			roamer.currentItem = item;
+		        		}
+		        	}
+	        	}
+	        	
+	        }
+	        
+	        private function toogleItemVisibility():void
+	        {
+	        	if (mainVisible)
+	        	{
+	        		mainVisible=false;
+	        		roamer.hideItem(roamer.currentItem);
+	        		toogleVis.label="Show Current Item";
+	        	}
+	        	else
+	        	{
+	        		mainVisible=true;
+	        		roamer.resetShowHide();
+	        		toogleVis.label="Hide Current Item";
+	        		roamer.recreate();
+	        	}
+	        }
+
+		]]>
+	</mx:Script>
+	
+</mx:Application>

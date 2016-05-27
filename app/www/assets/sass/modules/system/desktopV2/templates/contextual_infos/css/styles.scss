@@ -1,0 +1,32 @@
+div.title_infos {
+	border-bottom: 1px solid #D6D6D6;
+	float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+div.title_infos img {
+	float: right;
+}
+
+h2.infos_h2 {
+	padding-bottom: 10px;
+}
+
+td.infos_resp_name {
+	font-size: 14px;
+	font-weight: bold;
+	color: #888;
+}
+
+.zone_infos_1, .zone_infos_2 {
+	float: left;
+}
+.zone_infos_2 p {
+	margin: 10px;
+}
+.content_droite{
+	.container_zone_droite{
+		clear:both;
+	}
+}

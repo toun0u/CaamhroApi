@@ -1,0 +1,111 @@
+div.bloc_comment{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.bloc_zone_search_comment {
+    float: right;
+    width: 70%;
+    margin-top: 5px;
+}
+
+div.bloc_zone_search_comment > #bloc_formsearch_comment {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+input#bloc_editbox_search_comment{
+    background: url("/common/modules/system/desktopV2/templates/gfx/common/search_bg.png") repeat-x scroll left top transparent;
+    border: medium none;
+    color: #A9A9A9;
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    outline: medium none;
+    padding: 8px 10px;
+    width: 74% !important;
+}
+
+#bloc_formsearch_comment > span {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div.title_bloc_comment{
+    float: left;
+}
+
+div.cadre_bloc_comment{
+    float: left;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px 4px 4px 4px;
+}
+
+div.add_comment{
+    border-bottom: 1px solid #D6D6D6;
+    height: 20px;
+    margin-left: 6px;
+    padding-top: 5px;
+    width: 98%;
+}
+
+div.add_comment a {
+    float: right;
+}
+
+div.add_comment span{
+    float: right;
+    margin-left: 5px;
+    line-height: 17px;
+}
+
+div.add_comment_content{
+    height: 250px;
+    overflow: auto;
+    padding: 10px;
+    width: 97%;
+    overflow-x:auto;
+}
+
+div.cadre_bloc_comment_bas{
+    width: 100%;
+    height: 30px;
+    background-color: #F1F1F1;
+}
+
+td.picture_comment_contact{
+    float: left;
+    padding-right: 10px;
+    width: 40px;
+}
+
+td.bulle_discussion{
+    width: 21px;
+    vertical-align: top;
+}
+
+div.desc_comment_contact{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+div.desc_comment_contact_red a{
+    margin-left: 10px;
+    color: #df1d31;
+}
+
+div.desc_comment_date{
+    border-bottom: 1px solid #D6D6D6;
+    float: right;
+    padding-bottom: 5px;
+    margin-top: -10px;
+    text-align: right;
+    width: 93%;
+}

@@ -1,0 +1,348 @@
+.form_row {
+
+	margin-bottom: 1%;
+
+	.label {
+		margin-right: 3%;
+		display: inline-block;
+		width: 160px;
+		text-align: right;
+	}
+}
+
+.label {
+    border-radius: 3px;
+}
+.label, .badge {
+    color: rgb(81, 81, 81);
+    display: inline-block;
+    font-size: 11.844px;
+    line-height: 30px !important;
+    padding: 2px 4px;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;*/
+    white-space: nowrap;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form_row_validate {
+	padding: 10px;
+	text-align: right;
+	@include border-radius(0 0 5px 5px);
+
+	input {
+		margin-right: 2%;
+	}
+
+	input[type="reset"] {
+		color: black;
+		padding: 7px;
+		border: none;
+		background: white;
+		@include border-radius(5px);
+
+		&:hover {
+			background: darken(white, 10%);
+		}
+	}
+
+	input[type="submit"] {
+		padding: 10px;
+		width: 100px;
+		border: none;
+		text-align: center;
+		font-size: 1.2em;
+		color: white;
+		background: rgb(255, 97, 0);
+		@include border-radius(5px);
+
+		&:hover {
+			background: darken(rgb(245, 137, 71), 10%);
+		}
+	}
+}
+
+.group-form {
+
+	margin: 20px 0;
+
+	label {
+		display: block;
+	}
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: rgba(255, 97, 0, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 97, 0, 0.6) !important;
+    outline: 0 none;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 4px;
+    color: rgb(85, 85, 85);
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 6px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+div.form_row_description {
+    clear: both;
+    font-size: 11px;
+    margin-left: 190px;
+    padding-top: 4px;
+    width: 298px;
+}
+
+div.form_row {
+    clear: both;
+    font-size: 11px;
+    padding-top: 4px;
+    width: 100%;
+}
+
+input#fact_raisoc,
+input#fact_nom,
+input#fact_prenom,
+select#fact_pays,
+textarea#fact_adresse,
+input#fact_cp,
+input#fact_ville,
+input#fact_tel,
+input#fact_fax,
+input#fact_email,
+input#liv_nom,
+input#liv_prenom,
+input#liv_raisoc,
+select#liv_pays,
+textarea#liv_adresse,
+input#liv_adresse,
+input#liv_cp,
+input#liv_ville
+{
+	width: 65%;
+}
+
+input#captcha {
+    margin-left: 190px;
+}
+
+.table th, .table td {
+    border-top: 1px solid rgb(221, 221, 221);
+    line-height: 20px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr:nth-child(odd){
+ background-color: #f1f1f1;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+
+
+.group-form {
+
+	margin: 20px 0;
+
+	label {
+		display: block;
+	}
+}
+
+th.fond_table{
+    background-color: rgb(70, 187, 197);
+    color: rgb(255, 255, 255);
+}
+
+div.input_connexion{
+    width: 40%;
+}
+
+.nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.nav-tabs:after, .nav-pills:after {
+    clear: both;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.nav-tabs, .nav-pills {
+}
+.nav {
+    list-style: none outside none;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.nav-tabs {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.nav-tabs, .nav-pills {
+}
+
+.nav-tabs > li {
+    margin-bottom: -1px;
+}
+.nav-tabs > li, .nav-pills > li {
+    float: left;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(85, 85, 85);
+    cursor: default;
+}
+
+.nav-tabs > li > a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px 4px 0 0;
+    line-height: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.nav-tabs > li > a, .nav-pills > li > a {
+    line-height: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.nav > li > a {
+    display: block;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: rgb(238, 238, 238) rgb(238, 238, 238) rgb(221, 221, 221);
+}
+.nav > li > a:hover {
+    background-color: rgb(238, 238, 238) !important;
+    text-decoration: none;
+}
+
+div.tabbable > ul.nav > li.active a{
+    background: none #fff !important;    
+}
+
+div.tabbable > ul.nav > li a{
+    background: none;
+}
+
+.tab-content > .active, .pill-content > .active {
+    display: block;
+}
+
+.dinline {
+    display: inline !important;
+}
+
+.group-form .form-label {
+    float: left;
+    text-align: right;
+    width: 250px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+label, input, button, select, textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.group-form select, .group-form input {
+    margin-left: 25px;
+    border: 1px solid rgb(163, 163, 163);    
+}
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+input[type="radio"], input[type="checkbox"] {
+    line-height: normal;
+}
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+}
+
+textarea {
+    margin-left: 25px !important;
+}
+
+@media only screen and (max-width: 800px) {
+/* Force table to not be like tables anymore */
+#no-more-tables table,
+#no-more-tables thead,
+#no-more-tables tbody,
+#no-more-tables th,
+#no-more-tables td,
+#no-more-tables tr {
+display: block;
+}
+ 
+/* Hide table headers (but not display: none;, for accessibility) */
+#no-more-tables thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+ 
+#no-more-tables tr { border: 1px solid #ccc; }
+ 
+#no-more-tables td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #eee;
+position: relative;
+padding-left: 50%;
+white-space: normal;
+text-align:left;
+}
+ 
+#no-more-tables td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+text-align:left;
+font-weight: bold;
+}
+ 
+/*
+Label the data
+*/
+#no-more-tables td:before { content: attr(data-title); }
+}

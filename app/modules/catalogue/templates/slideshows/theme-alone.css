@@ -1,0 +1,150 @@
+/*
+	AnythingSlider v1.5.10 Metallic Theme
+	By Rob Garrison
+*/
+
+/****** SET COLORS HERE *******/
+/* Default State */
+div.anythingSlider-alone .anythingWindow {
+	border: 0;
+}
+div.anythingSlider-alone .thumbNav a {
+	border: 1px solid #fff;
+}
+
+/* Active State */
+div.anythingSlider-alone.activeSlider .anythingWindow {
+	border: 0;
+}
+div.anythingSlider-alone.activeSlider .thumbNav a {
+	background-color: transparent;
+	background-position: -32px;
+}
+div.anythingSlider-alone.activeSlider .thumbNav a:hover, div.anythingSlider-alone.activeSlider .thumbNav a.cur {
+	/*background-position: -76px -57px;*/
+}
+div.anythingSlider-alone.activeSlider .start-stop.playing {
+	background-color: #f00;
+}
+div.anythingSlider-alone .start-stop:hover, div.anythingSlider-alone .start-stop.hover {
+	color: #fff;
+}
+
+/* Navigation Arrows */
+div.anythingSlider-alone .arrow {
+	top: 50%;
+	position: absolute;
+	display: block;
+	z-index: 100;
+}
+div.anythingSlider-alone .arrow a {
+	display: block;
+	height: 95px;
+	margin-top: -47px; /* half height of image */
+	width: 45px;
+	outline: 0;
+	background: url(./gfx/arrows-alone.png) no-repeat;
+}
+
+div.anythingSlider-alone .forward { right: 0; }
+div.anythingSlider-alone .back { left: 0; }
+div.anythingSlider-alone .forward a { background-position: right bottom; }
+div.anythingSlider-alone .back a { background-position: left bottom; }
+div.anythingSlider-alone .forward a:hover, div.anythingSlider-alone .forward a.hover { background-position: right top; }
+div.anythingSlider-alone .back a:hover, div.anythingSlider-alone .back a.hover { background-position: left top; }
+
+/* Navigation Links */
+div.anythingSlider-alone .anythingControls {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+/*	z-index: 100;*/
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+div.anythingSlider-alone .thumbNav {
+	display: block;
+	float: right;
+	margin: 0;
+	z-index: 100;
+}
+div.anythingSlider-alone .thumbNav li {
+	display: block;
+	float: left;
+}
+div.anythingSlider-alone .thumbNav a {
+	display: block;
+	background: transparent url(./gfx/thumbnav-alone.png) -32px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin: 3px;
+	padding: 0;
+	outline: 0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+div.anythingSlider-alone .thumbNav a:hover, div.anythingSlider-alone .thumbNav a.cur {
+	background: transparent url(./gfx/thumbnav-alone.png) no-repeat;
+}
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.anythingSlider-alone.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+div.anythingSlider-alone.rtl .thumbNav { float: left; }    /* move nav link group to left */
+
+
+/* Autoplay Start/Stop button */
+div.anythingSlider-alone .start-stop {
+	display: none;
+}
+
+/* Extra - replace defaults */
+div.anythingSlider-alone {
+	padding: 0;
+}
+
+/* text indent moved to span inside "a", for IE7; apparently, a negative text-indent on an "a" link moves the link as well as the text */
+div.anythingSlider-alone .arrow a span, div.anythingSlider-alone .thumbNav a span, div.anythingSlider-alone .start-stop span {
+	display: block;
+	line-height: 1px; /* needed for IE7 */
+	color: #fff;
+	margin-top: 2px;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* CAPTIONS */
+.slider .caption-top, .slider .caption-right,
+.slider .caption-bottom, .slider .caption-left {
+	margin: 0;
+	padding: 10px;
+	background: transparent url(gfx/caption.png) repeat top left;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.slider .caption-top a.block, .slider .caption-right a.block,
+.slider .caption-bottom a.block, .slider .caption-left a.block {
+	display: block;
+}
+
+.slider .caption-top {
+	width: 735px;
+	height: 55px;
+}
+.slider .caption-bottom {
+	width: 735px;
+	height: 20px;
+	bottom: 0;
+}
+.slider .caption-left {
+	width: 200px;
+	height: 233px;
+}
+.slider .caption-right {
+    height: 233px;
+    margin-left: 635px;
+    width: 100px;
+}

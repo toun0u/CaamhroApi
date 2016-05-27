@@ -1,0 +1,157 @@
+/*
+	AnythingSlider v1.5.10 CPE Theme
+*/
+
+/****** SET COLORS HERE *******/
+/* Default State */
+div.anythingSlider-cpe .anythingWindow {
+	border: 0;
+}
+div.controlBigSlideshow .thumbNav a {
+	background: #777;
+}
+
+/* Active State */
+div.controlBigSlideshow.activeSlider .thumbNav a {
+	background-color: transparent;
+}
+
+/* Navigation Arrows */
+div.controlBigSlideshow .arrow {
+	top: 32%;
+	position: absolute;
+	z-index : 100;
+}
+div.controlBigSlideshow .arrow a {
+	display: block;
+	height: 37px;
+	margin-top: -20px; /* half height of image */
+	width: 9px;
+	text-align: center;
+	outline: 0;
+	background: url(gfx/arrows-imagecle.png) no-repeat;
+}
+
+div.controlBigSlideshow .forward a { background-position: right bottom; }
+div.controlBigSlideshow .back a { background-position: left bottom; }
+
+/* Navigation Links */
+div.controlBigSlideshow .anythingControls {
+	position: relative;
+	bottom: 5px;
+	z-index: 100;
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+div.controlBigSlideshow .thumbNav {
+	z-index: 100;
+}
+div.controlBigSlideshow .thumbNav li {
+	display: block;
+	float: left;
+}
+div.controlBigSlideshow .thumbNav a {
+	display: block;
+	height: 6px;
+	width: 6px;
+	margin: 3px;
+	padding: 0;
+	outline: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.controlBigSlideshow.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+div.controlBigSlideshow.rtl .thumbNav { float: left; }    /* move nav link group to left */
+
+
+/* Autoplay Start/Stop button */
+div.controlBigSlideshow .start-stop {
+	display: none;
+}
+
+/* Extra - replace defaults */
+div.anythingSlider-cpe , div.controlBigSlideshow {
+	padding: 0;
+}
+
+/* text indent moved to span inside "a", for IE7; apparently, a negative text-indent on an "a" link moves the link as well as the text */
+div.controlBigSlideshow .arrow a span, div.controlBigSlideshow .thumbNav a span, div.controlBigSlideshow .start-stop span {
+	display: block;
+	line-height: 1px; /* needed for IE7 */
+	text-indent: -9999px;
+}
+
+
+/* CAPTIONS */
+.slider .caption {
+	margin: 0;
+	padding: 10px;
+	background: transparent url(gfx/caption.png) repeat top left;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	width: 200px;
+	height: 233px;
+	margin-left: 480px;
+}
+
+.slider .caption a.block {
+	bottom: 30px;
+	display: block;
+	position: absolute;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.slider .caption.top {
+	width: 678px; /* diminué de 2px à cause des border*/
+	height: 55px;
+	margin-left: 0px;
+}
+.slider .caption.bottom {
+	width: 700px;
+	height: 55px;
+	bottom: 0;
+	margin-left: 0px;
+}
+.slider .caption.left {
+	width: 200px;
+	height: 233px;
+	margin-left: 0px;
+}
+
+.captionBigSlider {
+	width: 240px !important;
+	height: 253px !important;
+	background: none !important;
+}
+
+.slider .caption.right {
+	width: 240px;
+	height: 233px;
+	margin-left: 480px;
+}
+
+.topSliderTitre{
+	font-size : 90%;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	font-weight: normal;
+	margin : 0;
+	padding : 10px 0 8px 10px;
+}
+
+p.topSliderDescription{
+	color : #BBB;
+	font-size : 65%;
+	line-height : 130%;
+	font-weight: normal;
+	margin : 0;
+	padding : 0 10px 0 10px;
+	text-align : justify;
+	overflow: auto;
+	height : 222px;
+}
